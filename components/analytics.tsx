@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import { usePathname } from "next/navigation";
 import { useSite } from "./site-provider";
 import { TRACKING, trackingMode } from "@/lib/tracking-config";
+import { sanitizeAnalyticsUrl } from "@/lib/analytics";
 declare global {
   interface Window {
     dataLayer: unknown[];
@@ -27,6 +28,12 @@ function prepareConsent() {
     ad_personalization: "denied",
   });
   window.gtag("consent", "update", { analytics_storage: "granted" });
+  window.gtag("set", {
+    allow_google_signals: false,
+    allow_ad_personalization_signals: false,
+    page_location: sanitizeAnalyticsUrl(window.location.href),
+    page_referrer: sanitizeAnalyticsUrl(document.referrer),
+  });
   if (mode === "gtm")
     window.dataLayer.push({ "gtm.start": Date.now(), event: "gtm.js" });
 }

@@ -65,7 +65,11 @@ Los datos estructurados JSON-LD incluyen Organization, WebSite, WebPage/Collecti
 
 Se ha seleccionado `GTM-KWWXX8G5`. El contenedor solo se carga después de aceptar la analítica. Antes de cargarlo, el consentimiento de analítica se actualiza a concedido y el de publicidad permanece denegado. El rechazo se recuerda y no carga etiquetas; al retirar un consentimiento anterior se recarga la página para dejar de cargar el contenedor. La preferencia se puede cambiar desde el pie.
 
-**Estado comprobado al implementar:** el contenedor responde HTTP 200, pero su recurso publicado tiene `tags: []`. No hay una etiqueta de GA4 publicada y, por tanto, esta instalación de GTM por sí sola todavía no mide visitas. Para activar Analytics, publica una etiqueta de Google/GA4 con el ID real de la propiedad dentro de ese contenedor y configura sus comprobaciones de consentimiento.
+La propiedad de Google Analytics está creada en la cuenta empresarial `eaccjardines@gmail.com` con el nombre **EACC Jardines · www.eaccjardines.com**. Su flujo **EACC Jardines · Web** utiliza `https://www.eaccjardines.com`, ID de flujo `16247811302` e ID de medición **G-FZF7K4NYXJ**. La configuración de informes usa España/Madrid y EUR.
+
+La medición se administra mediante la etiqueta de Google Analytics del contenedor **GTM-KWWXX8G5**, con activación Initialization - All Pages. El ID de Analytics queda documentado también como alternativa directa; el modo GTM conserva prioridad, por lo que el repositorio no carga una segunda instalación directa.
+
+En el flujo se conservan las vistas de página y los desplazamientos. Se han desactivado los eventos automáticos de formularios, búsquedas internas, clics salientes, vídeos y descargas. Antes de iniciar GTM, el repositorio establece contexto de URL sin parámetros ni fragmentos y desactiva Google Signals y la personalización publicitaria.
 
 Como alternativa, puede usarse Analytics directo con `NEXT_PUBLIC_GA_MEASUREMENT_ID=G-...` y `NEXT_PUBLIC_GTM_ID=` vacío. Se carga una sola modalidad: un contenedor GTM válido tiene prioridad. Las variables `NEXT_PUBLIC_*` son públicas y requieren volver a compilar al cambiarlas. No deben contener secretos.
 
