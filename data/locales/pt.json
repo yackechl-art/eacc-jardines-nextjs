@@ -1,0 +1,198 @@
+{
+  "home": "Início",
+  "services": "Serviços",
+  "projects": "Projetos",
+  "tools": "Ferramentas",
+  "contact": "Contacto",
+  "privacy": "Privacidade e cookies",
+  "language": "Idioma",
+  "skip": "Saltar para o conteúdo",
+  "quote": "Pedir orçamento",
+  "more": "Ver detalhes",
+  "close": "Fechar imagem",
+  "all": "Todos os projetos",
+  "back": "Voltar ao topo",
+  "enlarge": "Ampliar imagem",
+  "country": "SEVILHA · SERVIÇOS EM TODA A ESPANHA",
+  "help": "COMO PODEMOS AJUDAR?",
+  "slogan": "Espaços verdes em mãos experientes.",
+  "hero": "Criamos, transformamos e cuidamos. O que precisa, com a experiência que procura e a atenção que merece.",
+  "heroLabel": "UM DOS NOSSOS TRABALHOS",
+  "heroResult": "Onde a experiência se transforma em resultados.",
+  "heroCta": "Conte-nos o seu projeto",
+  "viewProjects": "Ver os nossos trabalhos",
+  "national": "Sediados em Sevilha, trabalhamos em toda a Espanha.",
+  "clientsTitle": "CADA ESPAÇO, UMA NECESSIDADE. NÓS, A SOLUÇÃO.",
+  "clients": "Particulares · Condomínios · Empresas · Construtoras",
+  "servicesTitle": "Tudo começa com um trabalho bem feito.",
+  "servicesIntro": "Descubra o que podemos fazer por si.",
+  "projectsTitle": "O nosso trabalho fala por nós.",
+  "projectsIntro": "Conheça alguns dos nossos trabalhos de jardinagem, preparação de terrenos e manutenção de espaços verdes. Cada projeto reflete a nossa experiência, dedicação e atenção ao detalhe.",
+  "photoNote": "Montagens originais de trabalhos reais. Clique numa fotografia para a ver na íntegra.",
+  "processTitle": "Diga-nos o que precisa. Nós tratamos do resto.",
+  "processIntro": "A EACC Jardines trabalha para particulares, condomínios, empresas e profissionais. Seja um pequeno trabalho, manutenção regular ou um projeto de maior dimensão, colocamos a nossa experiência ao seu serviço para encontrar a solução adequada.",
+  "stepsTitles": [
+    "Diga-nos o que precisa",
+    "Estudamos cada trabalho",
+    "Preparamos o seu orçamento"
+  ],
+  "stepsText": [
+    "Explique o trabalho pretendido. Pode enviar fotografias, a localização e uma breve descrição, ou contactar-nos diretamente.",
+    "Avaliamos as necessidades, as características do espaço e a melhor forma de executar os trabalhos. Quando necessário, marcamos uma visita.",
+    "Apresentamos uma proposta adaptada às suas necessidades, com um orçamento claro e sem compromisso."
+  ],
+  "mobilityTitle": "De Sevilha, chegamos onde precisa de nós.",
+  "mobility": "Realizamos trabalhos em toda a Espanha, adaptando as deslocações às características e necessidades de cada projeto.",
+  "contactTitle": "Vamos falar do que precisa.",
+  "contactIntro": "Conte-nos o trabalho que pretende realizar. Estudaremos as suas necessidades para apresentar uma solução e um orçamento sem compromisso.",
+  "formTitle": "De que precisa o seu espaço?",
+  "formIntro": "Prepare o seu pedido e envie-o por WhatsApp.",
+  "serviceLabel": "Serviço",
+  "servicePlaceholder": "Selecione um serviço",
+  "placeLabel": "Localidade e província",
+  "placePlaceholder": "Indique a localidade e a província do trabalho",
+  "detailsLabel": "Conte-nos um pouco mais",
+  "optional": "opcional",
+  "detailsPlaceholder": "Descreva brevemente o trabalho, as características do espaço e os detalhes importantes",
+  "continue": "Continuar no WhatsApp",
+  "formNote": "O WhatsApp abre com a mensagem preparada. Decide quando a enviar. Estes dados não são guardados neste site.",
+  "formError": "Selecione um serviço e indique a localidade e a província.",
+  "whatsapp": "WhatsApp e chamadas",
+  "chat": "Vamos falar",
+  "footer": "SEVILHA · SERVIÇOS INTEGRAIS DE JARDINAGEM · COBERTURA NACIONAL",
+  "scopeTitle": "O que podemos fazer pelo seu espaço",
+  "prepareTitle": "Antes de pedir orçamento",
+  "prepareText": "Envie a localização, fotografias e medidas aproximadas. Indique as condições de acesso e se pretende uma intervenção pontual ou manutenção regular. Esta informação permite avaliar os trabalhos e definir os próximos passos.",
+  "related": "Projetos relacionados",
+  "faqTitle": "Perguntas frequentes",
+  "faqQuestion": "Como é preparado o orçamento?",
+  "faqAnswer": "Estudamos o estado do espaço e os trabalhos necessários. Quando necessário, marcamos uma visita para concretizar a proposta. O orçamento é sem compromisso.",
+  "coverageQuestion": "Onde está disponível este serviço?",
+  "toolsTitle": "Planeie o seu espaço exterior",
+  "toolsIntro": "Ferramentas simples para preparar medidas antes de pedir orçamento. Os resultados são indicativos e não substituem uma medição no local.",
+  "areaTitle": "Calculadora de superfície",
+  "areaIntro": "Calcule os metros quadrados de uma área retangular, circular ou triangular e acrescente uma margem opcional para planear materiais.",
+  "spacingTitle": "Calculadora de espaçamento de plantas",
+  "spacingIntro": "Estime posições de plantação numa linha ou numa grelha retangular, com a margem escolhida nas extremidades.",
+  "shape": "Forma",
+  "rectangle": "Retângulo",
+  "circle": "Círculo",
+  "triangle": "Triângulo",
+  "length": "Comprimento (m)",
+  "width": "Largura (m)",
+  "radius": "Raio (m)",
+  "base": "Base (m)",
+  "height": "Altura perpendicular (m)",
+  "margin": "Margem de material (%)",
+  "areaResult": "Superfície",
+  "withMargin": "Superfície com margem",
+  "distance": "Espaçamento entre plantas (m)",
+  "edge": "Margem em cada extremidade (m)",
+  "line": "Numa linha",
+  "grid": "Em grelha",
+  "mode": "Distribuição",
+  "plantResult": "Posições estimadas",
+  "invalid": "Introduza números positivos válidos dentro dos limites indicados.",
+  "areaNote": "Retângulo: comprimento × largura. Círculo: π × raio². Triângulo: base × altura perpendicular ÷ 2. A margem de material não é uma recomendação de compra.",
+  "spacingNote": "O espaçamento é medido entre centros. A primeira posição fica na margem; conta-se outra por cada intervalo completo. Em grelha: linhas × colunas. Não contempla obstáculos, dimensão adulta ou necessidades de cada espécie.",
+  "privacyText": "Os formulários e calculadoras funcionam no seu navegador. O site não guarda pedidos: o WhatsApp recebe a mensagem preparada e decide se a envia. As fotografias e o logótipo pertencem à EACC Jardines. As fontes Google Fonts podem ser carregadas ao abrir a página.",
+  "analyticsText": "Se autorizar e estiver configurado, o Google Analytics mede a utilização das páginas. Não enviamos os campos do formulário nem as medidas das ferramentas para o Analytics. Pode retirar o consentimento nas preferências de cookies.",
+  "cookies": "Preferências de cookies",
+  "cookieTitle": "Estatísticas opcionais",
+  "cookieText": "Podemos usar o Google Analytics para saber quais as páginas úteis. Só será carregado se aceitar.",
+  "accept": "Aceitar estatísticas",
+  "reject": "Rejeitar",
+  "save": "Guardar preferências",
+  "analyticsOff": "As estatísticas ainda não estão configuradas.",
+  "messageHello": "Olá, EACC Jardines. Gostaria de pedir um orçamento sem compromisso.",
+  "messageService": "Serviço",
+  "messagePlace": "Localidade",
+  "messageDetails": "Detalhes",
+  "filters": [
+    "Relva",
+    "Jardins",
+    "Terrenos",
+    "Poda e limpeza",
+    "Rega",
+    "Plantações"
+  ],
+  "serviceItems": [
+    {
+      "title": "Instalação de relva natural e artificial",
+      "description": "Sementeira de relva natural, colocação de tapetes de relva e instalação de relva artificial. Preparamos a superfície e adaptamos a solução ao uso e às características do espaço."
+    },
+    {
+      "title": "Preparação e acondicionamento de terrenos",
+      "description": "Limpeza e preparação de terrenos para plantações, instalação de relva ou renovação de espaços verdes."
+    },
+    {
+      "title": "Manutenção integral de jardins e espaços verdes",
+      "description": "Preparação e cuidado de jardins e zonas verdes de habitações, condomínios, empresas e espaços profissionais."
+    },
+    {
+      "title": "Instalação, reparação e manutenção de sistemas de rega",
+      "description": "Instalamos e verificamos sistemas de rega, reparamos avarias e realizamos a manutenção conforme as necessidades de cada espaço verde."
+    },
+    {
+      "title": "Podas e abate de árvores e palmeiras",
+      "description": "Trabalhos de poda e abate após avaliação dos exemplares, do envolvente e das necessidades de cada intervenção."
+    },
+    {
+      "title": "Desmatação e limpeza de parcelas",
+      "description": "Remoção de vegetação, desmatação e limpeza para recuperar terrenos e espaços verdes e prepará-los para utilização ou manutenção."
+    },
+    {
+      "title": "Criação, renovação e acondicionamento de jardins",
+      "description": "Criamos jardins e renovamos espaços existentes, combinando preparação do terreno, vegetação e acabamentos de acordo com cada projeto."
+    },
+    {
+      "title": "Plantação de árvores, arbustos e plantas ornamentais",
+      "description": "Plantações e renovação de canteiros e espaços verdes, respeitando as características do local e o resultado pretendido."
+    },
+    {
+      "title": "Limpeza e acondicionamento de espaços exteriores",
+      "description": "Preparação de espaços exteriores e ajardinados com limpeza, acondicionamento e acabamentos adaptados ao envolvente."
+    },
+    {
+      "title": "Outros trabalhos e aconselhamento",
+      "description": "Precisa de um trabalho de jardinagem ou acondicionamento que não aparece aqui? Conte-nos a sua ideia e estudaremos como ajudar."
+    }
+  ],
+  "projectItems": [
+    {
+      "title": "Renovação de jardim com fonte e oliveiras",
+      "description": "Preparação do terreno e renovação da relva. Uma montagem original reúne várias fases do mesmo trabalho."
+    },
+    {
+      "title": "Relva artificial junto a uma piscina",
+      "description": "Preparação da superfície e instalação de relva artificial à volta da piscina, com o processo e o resultado."
+    },
+    {
+      "title": "Ajardinamento de um espaço interior",
+      "description": "Da preparação do canteiro à plantação de palmeiras e plantas ornamentais: várias fases de uma intervenção completa."
+    },
+    {
+      "title": "Renovação de sebes num condomínio",
+      "description": "Imagens da remoção e renovação de uma vedação vegetal numa zona comum."
+    },
+    {
+      "title": "Manutenção de um canteiro circular",
+      "description": "Plantação e manutenção numa entrada, com fotografias da intervenção e do resultado."
+    },
+    {
+      "title": "Desmatação, limpeza e poda de vegetação",
+      "description": "Montagem antes e depois de uma intervenção numa vedação vegetal junto a uma habitação."
+    },
+    {
+      "title": "Instalação de um sistema de rega",
+      "description": "Ligações, preparação e instalação: uma vista conjunta dos trabalhos de rega de um espaço verde."
+    },
+    {
+      "title": "Acondicionamento de espaços verdes numa praça",
+      "description": "Preparação do terreno e implantação de relva num espaço exterior de utilização comum."
+    }
+  ],
+  "openMenu": "Abrir menu",
+  "closeMenu": "Fechar menu",
+  "breadcrumbs": "Caminho de navegação"
+}

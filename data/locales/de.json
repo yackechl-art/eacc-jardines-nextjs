@@ -1,0 +1,198 @@
+{
+  "home": "Startseite",
+  "services": "Leistungen",
+  "projects": "Projekte",
+  "tools": "Planungshilfen",
+  "contact": "Kontakt",
+  "privacy": "Datenschutz und Cookies",
+  "language": "Sprache",
+  "skip": "Zum Inhalt",
+  "quote": "Angebot anfordern",
+  "more": "Details ansehen",
+  "close": "Bild schließen",
+  "all": "Alle Projekte",
+  "back": "Nach oben",
+  "enlarge": "Bild vergrößern",
+  "country": "SEVILLA · IN GANZ SPANIEN FÜR SIE DA",
+  "help": "WIE KÖNNEN WIR IHNEN HELFEN?",
+  "slogan": "Grünflächen in erfahrenen Händen.",
+  "hero": "Wir gestalten, erneuern und pflegen. Was Sie brauchen, mit der Erfahrung, die Sie suchen, und der Aufmerksamkeit, die Sie verdienen.",
+  "heroLabel": "EINES UNSERER PROJEKTE",
+  "heroResult": "Wo Erfahrung zu Ergebnissen wird.",
+  "heroCta": "Erzählen Sie uns von Ihrem Projekt",
+  "viewProjects": "Unsere Arbeiten entdecken",
+  "national": "In Sevilla ansässig, in ganz Spanien tätig.",
+  "clientsTitle": "JEDER ORT HAT SEINE ANFORDERUNGEN. WIR BIETEN DIE LÖSUNG.",
+  "clients": "Privatkunden · Eigentümergemeinschaften · Unternehmen · Bauunternehmen",
+  "servicesTitle": "Alles beginnt mit guter Arbeit.",
+  "servicesIntro": "Entdecken Sie, was wir für Sie tun können.",
+  "projectsTitle": "Unsere Arbeit spricht für sich.",
+  "projectsIntro": "Entdecken Sie unsere Projekte in Gartenbau, Bodenvorbereitung und Grünflächenpflege. Jedes Projekt zeigt unsere Erfahrung, unseren Einsatz und unsere Sorgfalt im Detail.",
+  "photoNote": "Originalmontagen tatsächlicher Projekte. Klicken Sie auf ein Foto, um es vollständig zu sehen.",
+  "processTitle": "Sie sagen uns, was Sie brauchen. Wir kümmern uns darum.",
+  "processIntro": "EACC Jardines arbeitet für Privatkunden, Eigentümergemeinschaften, Unternehmen und Fachbetriebe. Ob kleiner Auftrag, laufende Pflege oder größeres Projekt: Wir setzen unsere Erfahrung für eine passende Lösung ein.",
+  "stepsTitles": [
+    "Beschreiben Sie Ihren Bedarf",
+    "Wir prüfen die Arbeiten",
+    "Wir erstellen Ihr Angebot"
+  ],
+  "stepsText": [
+    "Beschreiben Sie die gewünschten Arbeiten. Senden Sie Fotos, den Standort und eine kurze Beschreibung oder kontaktieren Sie uns direkt.",
+    "Wir prüfen Ihre Anforderungen, die Fläche und das geeignete Vorgehen. Bei Bedarf vereinbaren wir einen Ortstermin.",
+    "Sie erhalten einen auf Ihre Anforderungen abgestimmten Vorschlag mit einem klaren, unverbindlichen Angebot."
+  ],
+  "mobilityTitle": "Von Sevilla aus kommen wir dorthin, wo Sie uns brauchen.",
+  "mobility": "Wir arbeiten in ganz Spanien und passen die Anreise an die Anforderungen und Besonderheiten des jeweiligen Projekts an.",
+  "contactTitle": "Sprechen wir über Ihren Bedarf.",
+  "contactIntro": "Beschreiben Sie die gewünschten Arbeiten. Wir prüfen Ihre Anforderungen und schlagen eine Lösung mit einem unverbindlichen Angebot vor.",
+  "formTitle": "Was braucht Ihre Fläche?",
+  "formIntro": "Bereiten Sie Ihre Anfrage vor und senden Sie sie per WhatsApp.",
+  "serviceLabel": "Leistung",
+  "servicePlaceholder": "Leistung auswählen",
+  "placeLabel": "Ort und Provinz",
+  "placePlaceholder": "Ort und Provinz des Projekts angeben",
+  "detailsLabel": "Weitere Angaben",
+  "optional": "optional",
+  "detailsPlaceholder": "Beschreiben Sie kurz die Arbeiten, die Fläche und wichtige Einzelheiten",
+  "continue": "Weiter zu WhatsApp",
+  "formNote": "WhatsApp öffnet sich mit Ihrer vorbereiteten Nachricht. Sie entscheiden, wann Sie sie senden. Diese Website speichert diese Angaben nicht.",
+  "formError": "Wählen Sie eine Leistung und geben Sie Ort und Provinz an.",
+  "whatsapp": "WhatsApp und Anrufe",
+  "chat": "Kontakt",
+  "footer": "SEVILLA · UMFASSENDE GARTENBAULEISTUNGEN · SPANIENWEIT",
+  "scopeTitle": "Was wir für Ihre Fläche tun können",
+  "prepareTitle": "Vor der Angebotsanfrage",
+  "prepareText": "Senden Sie Standort, Fotos und ungefähre Maße. Nennen Sie die Zugangsmöglichkeiten und ob eine einmalige Arbeit oder laufende Pflege gewünscht ist. So können wir den Umfang und die nächsten Schritte abstimmen.",
+  "related": "Passende Projekte",
+  "faqTitle": "Häufige Fragen",
+  "faqQuestion": "Wie wird das Angebot erstellt?",
+  "faqAnswer": "Wir prüfen den Zustand der Fläche und den Arbeitsumfang. Bei Bedarf vereinbaren wir einen Ortstermin, um den Vorschlag zu konkretisieren. Das Angebot ist unverbindlich.",
+  "coverageQuestion": "Wo bieten Sie diese Leistung an?",
+  "toolsTitle": "Planen Sie Ihren Außenbereich",
+  "toolsIntro": "Einfache Hilfen zur Vorbereitung Ihrer Maße vor einer Angebotsanfrage. Die Ergebnisse sind Richtwerte und ersetzen kein Aufmaß vor Ort.",
+  "areaTitle": "Flächenrechner",
+  "areaIntro": "Berechnen Sie Quadratmeter für rechteckige, kreisförmige oder dreieckige Flächen und ergänzen Sie optional einen Materialzuschlag.",
+  "spacingTitle": "Pflanzabstandsrechner",
+  "spacingIntro": "Schätzen Sie Pflanzpositionen entlang einer Linie oder in einem rechteckigen Raster mit frei wählbarem Randabstand.",
+  "shape": "Form",
+  "rectangle": "Rechteck",
+  "circle": "Kreis",
+  "triangle": "Dreieck",
+  "length": "Länge (m)",
+  "width": "Breite (m)",
+  "radius": "Radius (m)",
+  "base": "Grundseite (m)",
+  "height": "Senkrechte Höhe (m)",
+  "margin": "Materialzuschlag (%)",
+  "areaResult": "Fläche",
+  "withMargin": "Fläche mit Zuschlag",
+  "distance": "Pflanzabstand (m)",
+  "edge": "Abstand zu jedem Rand (m)",
+  "line": "Entlang einer Linie",
+  "grid": "Im Raster",
+  "mode": "Anordnung",
+  "plantResult": "Geschätzte Positionen",
+  "invalid": "Geben Sie gültige positive Zahlen innerhalb der angegebenen Grenzen ein.",
+  "areaNote": "Rechteck: Länge × Breite. Kreis: π × Radius². Dreieck: Grundseite × senkrechte Höhe ÷ 2. Der Materialzuschlag ist keine Kaufempfehlung.",
+  "spacingNote": "Der Abstand wird von Mitte zu Mitte gemessen. Die erste Position liegt am Randabstand, danach folgt eine Position je vollständigem Intervall. Im Raster: Reihen × Spalten. Hindernisse, ausgewachsene Pflanzengröße und artspezifische Anforderungen werden nicht berücksichtigt.",
+  "privacyText": "Formulare und Rechner laufen in Ihrem Browser. Diese Website speichert keine Anfragen: WhatsApp erhält die vorbereitete Nachricht und Sie entscheiden über den Versand. Fotos und Logo gehören EACC Jardines. Google Fonts kann beim Laden der Seite abgerufen werden.",
+  "analyticsText": "Wenn eingerichtet und von Ihnen erlaubt, misst Google Analytics die Seitennutzung. Formularfelder und Rechnermaße werden nicht an Analytics gesendet. Sie können Ihre Einwilligung in den Cookie-Einstellungen widerrufen.",
+  "cookies": "Cookie-Einstellungen",
+  "cookieTitle": "Optionale Nutzungsanalyse",
+  "cookieText": "Wir können Google Analytics verwenden, um hilfreiche Seiten zu erkennen. Es wird nur mit Ihrer Zustimmung geladen.",
+  "accept": "Analyse erlauben",
+  "reject": "Ablehnen",
+  "save": "Einstellungen speichern",
+  "analyticsOff": "Die Nutzungsanalyse ist noch nicht eingerichtet.",
+  "messageHello": "Guten Tag, EACC Jardines. Ich möchte ein unverbindliches Angebot anfordern.",
+  "messageService": "Leistung",
+  "messagePlace": "Ort",
+  "messageDetails": "Angaben",
+  "filters": [
+    "Rasen",
+    "Gärten",
+    "Bodenvorbereitung",
+    "Schnitt und Reinigung",
+    "Bewässerung",
+    "Bepflanzung"
+  ],
+  "serviceItems": [
+    {
+      "title": "Natur- und Kunstrasen anlegen",
+      "description": "Aussaat von Naturrasen, Verlegen von Rollrasen und Kunstrasen. Wir bereiten den Untergrund vor und passen die Lösung an Nutzung und Fläche an."
+    },
+    {
+      "title": "Bodenvorbereitung und Geländeaufbereitung",
+      "description": "Reinigung und Vorbereitung von Flächen für Bepflanzung, Rasenverlegung oder die Erneuerung von Grünanlagen."
+    },
+    {
+      "title": "Umfassende Garten- und Grünflächenpflege",
+      "description": "Aufbereitung und Pflege von Gärten und Grünflächen für Wohnhäuser, Eigentümergemeinschaften, Unternehmen und Gewerbeflächen."
+    },
+    {
+      "title": "Bewässerungsanlagen installieren, reparieren und warten",
+      "description": "Installation und Prüfung von Bewässerungsanlagen, Störungsbeseitigung und Wartung entsprechend den Anforderungen der Grünflächen."
+    },
+    {
+      "title": "Baum- und Palmenschnitt sowie Fällarbeiten",
+      "description": "Schnitt- und Fällarbeiten an Bäumen und Palmen nach Prüfung der Pflanzen, des Umfelds und der Anforderungen des Eingriffs."
+    },
+    {
+      "title": "Gestrüpp entfernen und Grundstücke reinigen",
+      "description": "Entfernung von Bewuchs, Freischnitt und Reinigung, um Grundstücke und Grünflächen wieder nutzbar zu machen oder für die Pflege vorzubereiten."
+    },
+    {
+      "title": "Gärten gestalten, erneuern und aufbereiten",
+      "description": "Wir legen neue Gärten an und erneuern bestehende Bereiche mit passender Bodenvorbereitung, Bepflanzung und Gestaltung."
+    },
+    {
+      "title": "Bäume, Sträucher und Zierpflanzen pflanzen",
+      "description": "Bepflanzung und Erneuerung von Pflanzbeeten und Grünflächen unter Berücksichtigung des Standorts und des gewünschten Ergebnisses."
+    },
+    {
+      "title": "Außenbereiche reinigen und aufbereiten",
+      "description": "Aufbereitung von Außen- und Gartenflächen durch Reinigung, Vorbereitung und zum Umfeld passende Oberflächengestaltung."
+    },
+    {
+      "title": "Weitere Arbeiten und Beratung",
+      "description": "Sie benötigen Gartenbau- oder Grünflächenarbeiten, die hier nicht aufgeführt sind? Beschreiben Sie Ihre Idee, damit wir die Möglichkeiten prüfen können."
+    }
+  ],
+  "projectItems": [
+    {
+      "title": "Gartenerneuerung mit Brunnen und Olivenbäumen",
+      "description": "Bodenvorbereitung und Rasenerneuerung. Eine Originalmontage zeigt mehrere Phasen desselben Projekts."
+    },
+    {
+      "title": "Kunstrasen neben einem Swimmingpool",
+      "description": "Untergrundvorbereitung und Verlegung von Kunstrasen am Pool mit Bildern von Ablauf und Ergebnis."
+    },
+    {
+      "title": "Begrünung eines Innenraums",
+      "description": "Von der Beetvorbereitung bis zur Pflanzung von Palmen und Zierpflanzen: mehrere Phasen einer umfassenden Arbeit."
+    },
+    {
+      "title": "Heckenerneuerung in einer Wohnanlage",
+      "description": "Bilder der Entfernung und Erneuerung einer grünen Begrenzung im Gemeinschaftsbereich."
+    },
+    {
+      "title": "Pflege eines runden Pflanzbeets",
+      "description": "Bepflanzung und Pflege im Eingangsbereich mit Fotos der Arbeiten und des Ergebnisses."
+    },
+    {
+      "title": "Freischnitt, Reinigung und Rückschnitt",
+      "description": "Vorher-Nachher-Montage einer Arbeit an einer grünen Grundstücksbegrenzung neben einem Wohnhaus."
+    },
+    {
+      "title": "Installation einer Bewässerungsanlage",
+      "description": "Anschlüsse, Vorbereitung und Installation: ein Überblick über Bewässerungsarbeiten für eine Grünfläche."
+    },
+    {
+      "title": "Grünflächenaufbereitung auf einem Platz",
+      "description": "Bodenvorbereitung und Rasenanlage in einem gemeinsam genutzten Außenbereich."
+    }
+  ],
+  "openMenu": "Menü öffnen",
+  "closeMenu": "Menü schließen",
+  "breadcrumbs": "Brotkrumennavigation"
+}

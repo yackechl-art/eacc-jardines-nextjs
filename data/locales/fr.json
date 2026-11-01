@@ -1,0 +1,198 @@
+{
+  "home": "Accueil",
+  "services": "Services",
+  "projects": "Réalisations",
+  "tools": "Outils",
+  "contact": "Contact",
+  "privacy": "Confidentialité et cookies",
+  "language": "Langue",
+  "skip": "Aller au contenu",
+  "quote": "Demander un devis",
+  "more": "Voir les détails",
+  "close": "Fermer l’image",
+  "all": "Toutes les réalisations",
+  "back": "Retour en haut",
+  "enlarge": "Agrandir l’image",
+  "country": "SÉVILLE · INTERVENTIONS DANS TOUTE L’ESPAGNE",
+  "help": "COMMENT POUVONS-NOUS VOUS AIDER ?",
+  "slogan": "Vos espaces verts entre des mains expertes.",
+  "hero": "Nous créons, transformons et entretenons. Ce dont vous avez besoin, avec l’expérience que vous recherchez et l’attention que vous méritez.",
+  "heroLabel": "UNE DE NOS RÉALISATIONS",
+  "heroResult": "Quand l’expérience se traduit en résultats.",
+  "heroCta": "Parlez-nous de votre projet",
+  "viewProjects": "Découvrir nos réalisations",
+  "national": "Basés à Séville, nous intervenons dans toute l’Espagne.",
+  "clientsTitle": "À CHAQUE ESPACE SON BESOIN. NOUS APPORTONS LA SOLUTION.",
+  "clients": "Particuliers · Copropriétés · Entreprises · Entreprises de construction",
+  "servicesTitle": "Tout commence par un travail bien fait.",
+  "servicesIntro": "Découvrez ce que nous pouvons faire pour vous.",
+  "projectsTitle": "Notre travail parle pour nous.",
+  "projectsIntro": "Découvrez nos travaux de jardinage, de préparation de terrains et d’entretien des espaces verts. Chaque projet reflète notre expérience, notre implication et notre souci du détail.",
+  "photoNote": "Montages originaux de chantiers réels. Cliquez sur une photo pour la voir en entier.",
+  "processTitle": "Dites-nous ce dont vous avez besoin. Nous nous en chargeons.",
+  "processIntro": "EACC Jardines accompagne les particuliers, copropriétés, entreprises et professionnels. Petite intervention, entretien régulier ou projet plus important : nous mettons notre expérience à votre service pour trouver la solution adaptée.",
+  "stepsTitles": [
+    "Présentez-nous vos besoins",
+    "Nous étudions les travaux",
+    "Nous préparons votre devis"
+  ],
+  "stepsText": [
+    "Décrivez les travaux souhaités. Envoyez des photos, le lieu et une courte description, ou contactez-nous directement.",
+    "Nous évaluons les besoins, les caractéristiques du lieu et la meilleure méthode. Une visite est organisée si nécessaire.",
+    "Nous vous présentons une proposition adaptée à vos besoins, avec un devis clair et sans engagement."
+  ],
+  "mobilityTitle": "Depuis Séville, nous venons là où vous avez besoin de nous.",
+  "mobility": "Nous intervenons dans toute l’Espagne et adaptons nos déplacements aux caractéristiques et aux besoins de chaque projet.",
+  "contactTitle": "Parlons de vos besoins.",
+  "contactIntro": "Décrivez les travaux souhaités. Nous étudierons vos besoins pour vous proposer une solution et un devis sans engagement.",
+  "formTitle": "De quoi votre espace a-t-il besoin ?",
+  "formIntro": "Préparez votre demande et envoyez-la par WhatsApp.",
+  "serviceLabel": "Service",
+  "servicePlaceholder": "Sélectionnez un service",
+  "placeLabel": "Commune et province",
+  "placePlaceholder": "Indiquez la commune et la province du chantier",
+  "detailsLabel": "Donnez-nous quelques précisions",
+  "optional": "facultatif",
+  "detailsPlaceholder": "Décrivez les travaux, les caractéristiques du lieu et les informations utiles",
+  "continue": "Continuer sur WhatsApp",
+  "formNote": "WhatsApp s’ouvrira avec votre message préparé. Vous décidez quand l’envoyer. Ces informations ne sont pas conservées sur ce site.",
+  "formError": "Sélectionnez un service et indiquez la commune et la province.",
+  "whatsapp": "WhatsApp et appels",
+  "chat": "Parlons-en",
+  "footer": "SÉVILLE · SERVICES COMPLETS DE JARDINAGE · COUVERTURE NATIONALE",
+  "scopeTitle": "Ce que nous pouvons faire pour votre espace",
+  "prepareTitle": "Avant de demander un devis",
+  "prepareText": "Envoyez le lieu, des photos et les dimensions approximatives. Précisez les conditions d’accès et s’il s’agit d’une intervention ponctuelle ou d’un entretien régulier. Ces éléments nous permettent de définir le périmètre et les prochaines étapes.",
+  "related": "Réalisations associées",
+  "faqTitle": "Questions fréquentes",
+  "faqQuestion": "Comment le devis est-il établi ?",
+  "faqAnswer": "Nous étudions l’état du lieu et l’étendue des travaux. Une visite peut être organisée pour préciser la proposition. Le devis est sans engagement.",
+  "coverageQuestion": "Où ce service est-il proposé ?",
+  "toolsTitle": "Préparez votre espace extérieur",
+  "toolsIntro": "Des outils simples pour préparer vos mesures avant de demander un devis. Les résultats sont indicatifs et ne remplacent pas un relevé sur place.",
+  "areaTitle": "Calculateur de surface",
+  "areaIntro": "Calculez la surface en mètres carrés d’une zone rectangulaire, circulaire ou triangulaire et ajoutez une marge facultative pour les matériaux.",
+  "spacingTitle": "Calculateur d’espacement des plantes",
+  "spacingIntro": "Estimez les emplacements de plantation sur une ligne ou une grille rectangulaire, avec la marge choisie sur les bords.",
+  "shape": "Forme",
+  "rectangle": "Rectangle",
+  "circle": "Cercle",
+  "triangle": "Triangle",
+  "length": "Longueur (m)",
+  "width": "Largeur (m)",
+  "radius": "Rayon (m)",
+  "base": "Base (m)",
+  "height": "Hauteur perpendiculaire (m)",
+  "margin": "Marge de matériaux (%)",
+  "areaResult": "Surface",
+  "withMargin": "Surface avec marge",
+  "distance": "Espacement entre plantes (m)",
+  "edge": "Marge à chaque bord (m)",
+  "line": "Sur une ligne",
+  "grid": "En grille",
+  "mode": "Disposition",
+  "plantResult": "Emplacements estimés",
+  "invalid": "Saisissez des nombres positifs valides dans les limites indiquées.",
+  "areaNote": "Rectangle : longueur × largeur. Cercle : π × rayon². Triangle : base × hauteur perpendiculaire ÷ 2. La marge ne constitue pas un conseil d’achat.",
+  "spacingNote": "L’espacement est mesuré de centre à centre. La première position commence à la marge, puis une position est ajoutée par intervalle complet. En grille : lignes × colonnes. Obstacles, taille adulte et besoins des espèces ne sont pas pris en compte.",
+  "privacyText": "Les formulaires et calculateurs fonctionnent dans votre navigateur. Ce site ne conserve pas les demandes : WhatsApp reçoit le message préparé et vous décidez de l’envoyer. Les photos et le logo appartiennent à EACC Jardines. Les polices Google Fonts peuvent être chargées à l’ouverture de la page.",
+  "analyticsText": "Si vous l’acceptez et que le service est configuré, Google Analytics mesure l’utilisation des pages. Les champs du formulaire et les mesures des outils ne sont pas transmis à Analytics. Vous pouvez retirer votre accord dans les préférences de cookies.",
+  "cookies": "Préférences de cookies",
+  "cookieTitle": "Statistiques facultatives",
+  "cookieText": "Nous pouvons utiliser Google Analytics pour savoir quelles pages sont utiles. Il ne sera chargé qu’avec votre accord.",
+  "accept": "Accepter les statistiques",
+  "reject": "Refuser",
+  "save": "Enregistrer les préférences",
+  "analyticsOff": "Les statistiques ne sont pas encore configurées.",
+  "messageHello": "Bonjour EACC Jardines. Je souhaite un devis sans engagement.",
+  "messageService": "Service",
+  "messagePlace": "Lieu",
+  "messageDetails": "Précisions",
+  "filters": [
+    "Gazon",
+    "Jardins",
+    "Terrains",
+    "Taille et nettoyage",
+    "Arrosage",
+    "Plantations"
+  ],
+  "serviceItems": [
+    {
+      "title": "Installation de gazon naturel et synthétique",
+      "description": "Semis de gazon naturel, pose de gazon en rouleaux et installation de gazon synthétique. Nous préparons la surface et adaptons la solution à l’usage et aux caractéristiques du lieu."
+    },
+    {
+      "title": "Préparation et aménagement des terrains",
+      "description": "Nettoyage, préparation et remise en état des sols pour les plantations, la pose de gazon ou la rénovation des espaces verts."
+    },
+    {
+      "title": "Entretien complet des jardins et espaces verts",
+      "description": "Remise en état et entretien des jardins et espaces verts pour les particuliers, copropriétés, entreprises et sites professionnels."
+    },
+    {
+      "title": "Installation, réparation et entretien de l’arrosage",
+      "description": "Installation et contrôle des systèmes d’arrosage, réparation des pannes et entretien selon les besoins des espaces verts."
+    },
+    {
+      "title": "Taille et abattage des arbres et palmiers",
+      "description": "Travaux de taille et d’abattage après étude des végétaux, de leur environnement et des besoins de chaque intervention."
+    },
+    {
+      "title": "Débroussaillage et nettoyage des parcelles",
+      "description": "Retrait de végétation, débroussaillage et nettoyage pour remettre en état les terrains et espaces verts et préparer leur usage ou leur entretien."
+    },
+    {
+      "title": "Création, rénovation et aménagement de jardins",
+      "description": "Création de jardins et rénovation d’espaces existants en combinant préparation du sol, végétation et finitions adaptées au projet."
+    },
+    {
+      "title": "Plantation d’arbres, arbustes et plantes ornementales",
+      "description": "Plantation et renouvellement des jardinières et espaces verts selon les caractéristiques du lieu et le résultat recherché."
+    },
+    {
+      "title": "Nettoyage et aménagement des espaces extérieurs",
+      "description": "Remise en état des espaces extérieurs et paysagers, avec nettoyage, préparation et finitions adaptées à l’environnement."
+    },
+    {
+      "title": "Autres travaux et conseils",
+      "description": "Vous avez besoin de travaux de jardinage ou d’aménagement non présentés ici ? Décrivez votre idée : nous étudierons comment vous aider."
+    }
+  ],
+  "projectItems": [
+    {
+      "title": "Rénovation d’un jardin avec fontaine et oliviers",
+      "description": "Préparation du terrain et rénovation du gazon. Montage original réunissant plusieurs étapes du même chantier."
+    },
+    {
+      "title": "Gazon synthétique autour d’une piscine",
+      "description": "Préparation de la surface et installation du gazon autour de la piscine, avec le processus et le résultat."
+    },
+    {
+      "title": "Aménagement paysager intérieur",
+      "description": "De la préparation du parterre à la plantation de palmiers et de plantes ornementales : plusieurs étapes d’une intervention complète."
+    },
+    {
+      "title": "Renouvellement de haies en copropriété",
+      "description": "Images du retrait et du renouvellement d’une clôture végétale dans un espace collectif."
+    },
+    {
+      "title": "Entretien d’une jardinière circulaire",
+      "description": "Plantation et entretien d’une entrée, avec des photos des travaux et du résultat."
+    },
+    {
+      "title": "Débroussaillage, nettoyage et taille",
+      "description": "Montage avant-après d’une intervention sur une clôture végétale près d’une habitation."
+    },
+    {
+      "title": "Installation d’un système d’arrosage",
+      "description": "Raccordements, préparation et installation : une vue d’ensemble des travaux d’arrosage d’un espace vert."
+    },
+    {
+      "title": "Aménagement d’espaces verts sur une place",
+      "description": "Préparation du sol et implantation de gazon dans un espace extérieur collectif."
+    }
+  ],
+  "openMenu": "Ouvrir le menu",
+  "closeMenu": "Fermer le menu",
+  "breadcrumbs": "Fil d’Ariane"
+}

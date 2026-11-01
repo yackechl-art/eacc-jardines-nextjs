@@ -1,28 +1,72 @@
-'use client';
-import { useState, type FormEvent } from 'react';
-import content from '@/data/content.json';
-import { useSite } from './site-provider';
-import { buildWhatsAppUrl } from '@/lib/whatsapp';
+"use client";
+import { useEffect, useState, type FormEvent } from "react";
+import { useSite } from "./site-provider";
+import { buildWhatsAppUrl } from "@/lib/whatsapp";
 export function QuoteForm() {
-  const { service, setService } = useSite();
-  const [error, setError] = useState('');
+  const { service, setService, d } = useSite(),
+    [error, setError] = useState("");
+  useEffect(() => {
+    const id = new URL(window.location.href).searchParams.get("service");
+    if (id !== null && /^\d+$/.test(id) && d.serviceItems[Number(id)])
+      setService(d.serviceItems[Number(id)].title);
+  }, [d, setService]);
   function submit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
     const form = new FormData(event.currentTarget);
     try {
-      const url = buildWhatsAppUrl(service, String(form.get('place') || ''), String(form.get('details') || ''));
-      setError('');
-      window.open(url, '_blank', 'noopener,noreferrer');
-    } catch (error) { setError(error instanceof Error ? error.message : 'Revisa los datos de tu consulta.'); }
+      const url = buildWhatsAppUrl(
+        service,
+        String(form.get("place") || ""),
+        String(form.get("details") || ""),
+        d,
+      );
+      setError("");
+      window.open(url, "_blank", "noopener,noreferrer");
+    } catch (err) {
+      setError(err instanceof Error ? err.message : d.formError);
+    }
   }
-  return <form id="quote-form" onSubmit={submit}>
-    <h3>¿Qué necesita tu espacio?</h3><p>Prepara tu consulta y envíanosla por WhatsApp.</p>
-    <label htmlFor="service">Servicio</label>
-    <select id="service" name="service" required value={service} onChange={event => setService(event.target.value)}><option value="">Selecciona un servicio</option>{content.services.map(item => <option key={item.title}>{item.title}</option>)}</select>
-    <label htmlFor="place">Localidad y provincia</label><input id="place" name="place" placeholder="Indícanos la localidad y provincia del trabajo" maxLength={120} required onChange={() => setError('')} />
-    <label htmlFor="details">Cuéntanos un poco más <span>(opcional)</span></label><textarea id="details" name="details" rows={3} maxLength={1500} placeholder="Describe brevemente el trabajo que necesitas realizar, las características del espacio o cualquier detalle que consideres importante" />
-    {error && <p role="alert">{error}</p>}
-    <button className="button" type="submit">Continuar por WhatsApp <span>↗</span></button>
-    <p className="form-note">Se abrirá WhatsApp con tu mensaje preparado. Tú decides cuándo enviarlo. Estos datos no se guardan en esta web.</p>
-  </form>;
+  return (
+    <form id="quote-form" onSubmit={submit}>
+      <h3>{d.formTitle}</h3>
+      <p>{d.formIntro}</p>
+      <label htmlFor="service">{d.serviceLabel}</label>
+      <select
+        id="service"
+        name="service"
+        required
+        value={service}
+        onChange={(e) => setService(e.target.value)}
+      >
+        <option value="">{d.servicePlaceholder}</option>
+        {d.serviceItems.map((s) => (
+          <option key={s.title}>{s.title}</option>
+        ))}
+      </select>
+      <label htmlFor="place">{d.placeLabel}</label>
+      <input
+        id="place"
+        name="place"
+        placeholder={d.placePlaceholder}
+        maxLength={120}
+        required
+        onChange={() => setError("")}
+      />
+      <label htmlFor="details">
+        {d.detailsLabel} <span>({d.optional})</span>
+      </label>
+      <textarea
+        id="details"
+        name="details"
+        rows={3}
+        maxLength={1500}
+        placeholder={d.detailsPlaceholder}
+      />
+      {error && <p role="alert">{error}</p>}
+      <button className="button" type="submit">
+        {d.continue} <span>↗</span>
+      </button>
+      <p className="form-note">{d.formNote}</p>
+    </form>
+  );
 }

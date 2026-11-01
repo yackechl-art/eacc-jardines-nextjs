@@ -1,0 +1,198 @@
+{
+  "home": "Home",
+  "services": "Services",
+  "projects": "Projects",
+  "tools": "Tools",
+  "contact": "Contact",
+  "privacy": "Privacy and cookies",
+  "language": "Language",
+  "skip": "Skip to content",
+  "quote": "Request a quote",
+  "more": "View details",
+  "close": "Close image",
+  "all": "All projects",
+  "back": "Back to top",
+  "enlarge": "Enlarge image",
+  "country": "SEVILLE · SERVICES THROUGHOUT SPAIN",
+  "help": "HOW CAN WE HELP YOU?",
+  "slogan": "Green spaces in expert hands.",
+  "hero": "We create, transform and care. What you need, with the experience you seek and the attention you deserve.",
+  "heroLabel": "ONE OF OUR PROJECTS",
+  "heroResult": "Where experience becomes results.",
+  "heroCta": "Tell us about your project",
+  "viewProjects": "Explore our work",
+  "national": "Based in Seville, working throughout Spain.",
+  "clientsTitle": "EVERY SPACE HAS A NEED. WE PROVIDE THE SOLUTION.",
+  "clients": "Homeowners · Residential communities · Businesses · Construction companies",
+  "servicesTitle": "It all starts with a job well done.",
+  "servicesIntro": "Discover what we can do for you.",
+  "projectsTitle": "Our work speaks for itself.",
+  "projectsIntro": "Explore our gardening, ground preparation and green space maintenance projects. Each one reflects our experience, dedication and attention to detail.",
+  "photoNote": "Original montages of real projects. Select a photograph to view it in full.",
+  "processTitle": "Tell us what you need. We take care of the rest.",
+  "processIntro": "At EACC Jardines we work for homeowners, residential communities, businesses and professionals. From a small job to ongoing maintenance or a larger project, we put our experience at your service to find the right solution.",
+  "stepsTitles": [
+    "Tell us what you need",
+    "We assess the work",
+    "We prepare your quote"
+  ],
+  "stepsText": [
+    "Explain the work you have in mind. Send photographs, the location and a short description, or contact us directly.",
+    "We assess your needs, the space and the best approach. Where necessary, we arrange a site visit.",
+    "We present a proposal tailored to your needs, with a clear, no-obligation quote."
+  ],
+  "mobilityTitle": "From Seville, we travel to where you need us.",
+  "mobility": "We work throughout Spain, adapting travel arrangements to the needs and characteristics of each project.",
+  "contactTitle": "Let’s talk about what you need.",
+  "contactIntro": "Tell us about the work you want to carry out. We will assess your needs and offer a solution with a no-obligation quote.",
+  "formTitle": "What does your space need?",
+  "formIntro": "Prepare your enquiry and send it via WhatsApp.",
+  "serviceLabel": "Service",
+  "servicePlaceholder": "Select a service",
+  "placeLabel": "Town and province",
+  "placePlaceholder": "Enter the town and province of the project",
+  "detailsLabel": "Tell us a little more",
+  "optional": "optional",
+  "detailsPlaceholder": "Briefly describe the work, the space and any details you consider important",
+  "continue": "Continue to WhatsApp",
+  "formNote": "WhatsApp opens with your prepared message. You decide when to send it. This website does not store these details.",
+  "formError": "Select a service and enter the town and province.",
+  "whatsapp": "WhatsApp and calls",
+  "chat": "Let’s talk",
+  "footer": "SEVILLE · COMPLETE GARDENING SERVICES · NATIONWIDE COVERAGE",
+  "scopeTitle": "What we can do for your space",
+  "prepareTitle": "Before requesting a quote",
+  "prepareText": "Send the location, photographs and approximate measurements. Let us know about access and whether you need a one-off job or ongoing maintenance. This helps us assess the scope and agree the next steps.",
+  "related": "Related projects",
+  "faqTitle": "Frequently asked questions",
+  "faqQuestion": "How is the quote prepared?",
+  "faqAnswer": "We assess the condition of the space and the scope of the work. Where necessary, we arrange a visit before preparing the proposal. Quotes are free of obligation.",
+  "coverageQuestion": "Where is this service available?",
+  "toolsTitle": "Plan your outdoor space",
+  "toolsIntro": "Simple tools to help prepare measurements before requesting a quote. Results are estimates and do not replace an on-site survey.",
+  "areaTitle": "Area calculator",
+  "areaIntro": "Calculate the square metres of a rectangular, circular or triangular space and add an optional planning allowance for materials.",
+  "spacingTitle": "Plant spacing calculator",
+  "spacingIntro": "Estimate planting positions along a line or in a rectangular grid, leaving your chosen margin at the edges.",
+  "shape": "Shape",
+  "rectangle": "Rectangle",
+  "circle": "Circle",
+  "triangle": "Triangle",
+  "length": "Length (m)",
+  "width": "Width (m)",
+  "radius": "Radius (m)",
+  "base": "Base (m)",
+  "height": "Perpendicular height (m)",
+  "margin": "Material allowance (%)",
+  "areaResult": "Area",
+  "withMargin": "Area with allowance",
+  "distance": "Spacing between plants (m)",
+  "edge": "Margin at each edge (m)",
+  "line": "Along a line",
+  "grid": "In a grid",
+  "mode": "Layout",
+  "plantResult": "Estimated positions",
+  "invalid": "Enter valid positive numbers within the stated limits.",
+  "areaNote": "Rectangle: length × width. Circle: π × radius². Triangle: base × perpendicular height ÷ 2. The material allowance is not a purchase recommendation.",
+  "spacingNote": "Spacing is measured centre to centre. The first position starts at the margin; another is added for each full interval. Grid positions are rows × columns. Obstacles, mature plant size and species requirements are not included.",
+  "privacyText": "Forms and calculators run in your browser. This website does not store enquiries: continuing sends the prepared message to WhatsApp, where you decide whether to send it. Photographs and the logo belong to EACC Jardines. Google Fonts may be requested when the page loads.",
+  "analyticsText": "If configured and accepted, Google Analytics measures page usage. We do not send form fields or calculator measurements to Analytics. You can withdraw consent in cookie preferences.",
+  "cookies": "Cookie preferences",
+  "cookieTitle": "Optional analytics",
+  "cookieText": "We can use Google Analytics to learn which pages are useful. We only load it if you agree.",
+  "accept": "Accept analytics",
+  "reject": "Reject",
+  "save": "Save preferences",
+  "analyticsOff": "Analytics has not yet been configured.",
+  "messageHello": "Hello, EACC Jardines. I would like a no-obligation quote.",
+  "messageService": "Service",
+  "messagePlace": "Location",
+  "messageDetails": "Details",
+  "filters": [
+    "Lawns",
+    "Gardens",
+    "Ground preparation",
+    "Pruning and clearance",
+    "Irrigation",
+    "Planting"
+  ],
+  "serviceItems": [
+    {
+      "title": "Natural and artificial lawn installation",
+      "description": "Natural grass seeding, turf laying and artificial lawn installation. We prepare the surface and adapt the solution to the use and characteristics of each space."
+    },
+    {
+      "title": "Ground preparation and conditioning",
+      "description": "Clearing, preparing and conditioning ground for planting, lawn installation or the renewal of green spaces."
+    },
+    {
+      "title": "Complete garden and green space maintenance",
+      "description": "Seasonal preparation and care for gardens and green spaces at homes, residential communities, businesses and professional premises."
+    },
+    {
+      "title": "Irrigation installation, repair and maintenance",
+      "description": "We install and inspect irrigation systems, repair faults and maintain equipment to support the needs of each green space."
+    },
+    {
+      "title": "Tree and palm pruning and felling",
+      "description": "Pruning and felling work for trees and palms, after assessing the specimens, their surroundings and the requirements of each intervention."
+    },
+    {
+      "title": "Brush clearing and plot cleaning",
+      "description": "Vegetation removal, brush clearing and cleaning to recover plots and green spaces and prepare them for use or maintenance."
+    },
+    {
+      "title": "Garden creation, renovation and conditioning",
+      "description": "We create new gardens and renew existing spaces, combining ground preparation, planting and finishes for each project."
+    },
+    {
+      "title": "Tree, shrub and ornamental planting",
+      "description": "Planting and renewal of planters and green spaces, taking account of the location and the desired result."
+    },
+    {
+      "title": "Outdoor space cleaning and conditioning",
+      "description": "We prepare outdoor areas and landscaped spaces through cleaning, ground preparation and finishes suited to their surroundings."
+    },
+    {
+      "title": "Other work and advice",
+      "description": "Need gardening or green space work that is not listed here? Tell us your idea and we will assess how we can help."
+    }
+  ],
+  "projectItems": [
+    {
+      "title": "Garden renovation with a fountain and olive trees",
+      "description": "Ground preparation and lawn renewal. An original montage showing several stages of the same project."
+    },
+    {
+      "title": "Artificial lawn beside a swimming pool",
+      "description": "Surface preparation and artificial lawn installation around a pool, showing the process and result."
+    },
+    {
+      "title": "Indoor landscaping",
+      "description": "From preparing the bed to planting palms and ornamental plants: several stages of a complete intervention."
+    },
+    {
+      "title": "Hedge renewal in a residential community",
+      "description": "Images of removing and renewing a planted boundary in a shared residential area."
+    },
+    {
+      "title": "Circular planter maintenance",
+      "description": "Planting and maintenance at an entrance, with photographs of the work and result."
+    },
+    {
+      "title": "Vegetation clearance, cleaning and pruning",
+      "description": "Before-and-after montage of work on a planted boundary beside a house."
+    },
+    {
+      "title": "Irrigation system installation",
+      "description": "Connections, preparation and installation: a combined view of irrigation work for a green space."
+    },
+    {
+      "title": "Green space preparation in a square",
+      "description": "Ground preparation and lawn establishment in a shared outdoor area."
+    }
+  ],
+  "openMenu": "Open menu",
+  "closeMenu": "Close menu",
+  "breadcrumbs": "Breadcrumb"
+}

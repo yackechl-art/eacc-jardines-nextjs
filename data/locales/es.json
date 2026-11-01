@@ -1,0 +1,198 @@
+{
+  "home": "Inicio",
+  "services": "Servicios",
+  "projects": "Proyectos",
+  "tools": "Herramientas",
+  "contact": "Contacto",
+  "privacy": "Privacidad y cookies",
+  "language": "Idioma",
+  "skip": "Ir al contenido",
+  "quote": "Pedir presupuesto",
+  "more": "Ver detalles",
+  "close": "Cerrar imagen",
+  "all": "Todos los trabajos",
+  "back": "Volver arriba",
+  "enlarge": "Ampliar imagen",
+  "country": "SEVILLA · SERVICIO EN TODA ESPAÑA",
+  "help": "¿EN QUÉ PODEMOS AYUDARTE?",
+  "slogan": "Zonas verdes en manos expertas.",
+  "hero": "Creamos, transformamos y cuidamos. Lo que necesitas, con la experiencia que buscas y la atención que mereces.",
+  "heroLabel": "UN TRABAJO NUESTRO",
+  "heroResult": "Donde la experiencia se convierte en resultados.",
+  "heroCta": "Cuéntanos tu proyecto",
+  "viewProjects": "Ver nuestros trabajos",
+  "national": "Desde Sevilla, realizamos trabajos en toda España.",
+  "clientsTitle": "CADA ESPACIO, UNA NECESIDAD. NOSOTROS, LA SOLUCIÓN.",
+  "clients": "Particulares · Comunidades · Empresas · Constructoras",
+  "servicesTitle": "Todo empieza con un buen trabajo.",
+  "servicesIntro": "Descubre lo que podemos hacer por ti.",
+  "projectsTitle": "Nuestro trabajo habla por nosotros.",
+  "projectsIntro": "Descubre algunos de nuestros trabajos de jardinería, acondicionamiento de terrenos y mantenimiento de espacios verdes. Cada proyecto refleja nuestra experiencia, dedicación y atención al detalle.",
+  "photoNote": "Montajes originales de trabajos reales. Pulsa sobre una fotografía para verla completa.",
+  "processTitle": "Tú nos cuentas qué necesitas. Nosotros nos encargamos.",
+  "processIntro": "En EACC Jardines trabajamos para particulares, comunidades, empresas y profesionales. Ya sea un pequeño trabajo, el mantenimiento de una zona verde o un proyecto de mayor envergadura, ponemos nuestra experiencia a tu servicio para encontrar la mejor solución.",
+  "stepsTitles": [
+    "Cuéntanos qué necesitas",
+    "Estudiamos cada trabajo",
+    "Preparamos tu presupuesto"
+  ],
+  "stepsText": [
+    "Explícanos qué trabajo quieres realizar. Puedes enviarnos fotografías, la ubicación y una breve descripción, o contactar directamente con nosotros.",
+    "Valoramos tus necesidades, las características del espacio y la mejor forma de realizar el trabajo. Cuando sea necesario, concertamos una visita.",
+    "Te presentamos una propuesta adaptada a tus necesidades, con un presupuesto claro y sin compromiso."
+  ],
+  "mobilityTitle": "Desde Sevilla, llegamos donde nos necesites.",
+  "mobility": "Realizamos trabajos en toda España, adaptando nuestros desplazamientos a las características y necesidades de cada proyecto.",
+  "contactTitle": "Hablemos de lo que necesitas.",
+  "contactIntro": "Cuéntanos qué trabajo quieres realizar y cómo podemos ayudarte. Estudiaremos tus necesidades para ofrecerte una solución y un presupuesto sin compromiso.",
+  "formTitle": "¿Qué necesita tu espacio?",
+  "formIntro": "Prepara tu consulta y envíanosla por WhatsApp.",
+  "serviceLabel": "Servicio",
+  "servicePlaceholder": "Selecciona un servicio",
+  "placeLabel": "Localidad y provincia",
+  "placePlaceholder": "Indícanos la localidad y provincia del trabajo",
+  "detailsLabel": "Cuéntanos un poco más",
+  "optional": "opcional",
+  "detailsPlaceholder": "Describe brevemente el trabajo que necesitas realizar, las características del espacio o cualquier detalle que consideres importante",
+  "continue": "Continuar por WhatsApp",
+  "formNote": "Se abrirá WhatsApp con tu mensaje preparado. Tú decides cuándo enviarlo. Estos datos no se guardan en esta web.",
+  "formError": "Selecciona un servicio e indica la localidad y provincia.",
+  "whatsapp": "WhatsApp y llamadas",
+  "chat": "Hablemos",
+  "footer": "SEVILLA · SERVICIOS INTEGRALES DE JARDINERÍA · COBERTURA NACIONAL",
+  "scopeTitle": "Qué podemos hacer en tu espacio",
+  "prepareTitle": "Antes de solicitar presupuesto",
+  "prepareText": "Para valorar el trabajo, envíanos la ubicación, fotografías y medidas aproximadas. Indica también el acceso al espacio y si necesitas una intervención puntual o mantenimiento. Con esta información estudiaremos el alcance y los próximos pasos.",
+  "related": "Trabajos relacionados",
+  "faqTitle": "Preguntas frecuentes",
+  "faqQuestion": "¿Cómo se prepara el presupuesto?",
+  "faqAnswer": "Estudiamos el estado del espacio y el alcance de los trabajos. Cuando es necesario, acordamos una visita para concretar la propuesta. El presupuesto es sin compromiso.",
+  "coverageQuestion": "¿Dónde realizáis este servicio?",
+  "toolsTitle": "Planifica tu espacio exterior",
+  "toolsIntro": "Herramientas sencillas para preparar medidas antes de pedir presupuesto. Los resultados son orientativos y no sustituyen una medición sobre el terreno.",
+  "areaTitle": "Calculadora de superficie",
+  "areaIntro": "Calcula los metros cuadrados de una zona rectangular, circular o triangular y añade un margen opcional para planificar materiales.",
+  "spacingTitle": "Calculadora de separación de plantas",
+  "spacingIntro": "Estima cuántas posiciones de plantación caben en una línea o en una cuadrícula rectangular, dejando el margen elegido en los bordes.",
+  "shape": "Forma",
+  "rectangle": "Rectángulo",
+  "circle": "Círculo",
+  "triangle": "Triángulo",
+  "length": "Longitud (m)",
+  "width": "Anchura (m)",
+  "radius": "Radio (m)",
+  "base": "Base (m)",
+  "height": "Altura perpendicular (m)",
+  "margin": "Margen de material (%)",
+  "areaResult": "Superficie",
+  "withMargin": "Superficie con margen",
+  "distance": "Separación entre plantas (m)",
+  "edge": "Margen en cada borde (m)",
+  "line": "En una línea",
+  "grid": "En cuadrícula",
+  "mode": "Distribución",
+  "plantResult": "Posiciones estimadas",
+  "invalid": "Introduce números válidos, positivos y dentro de los límites indicados.",
+  "areaNote": "Rectángulo: longitud × anchura. Círculo: π × radio². Triángulo: base × altura perpendicular ÷ 2. El margen de material no es una recomendación de compra.",
+  "spacingNote": "La separación se mide entre centros. La primera posición queda en el margen; se cuenta otra cada intervalo completo. En cuadrícula se multiplican filas y columnas. No contempla obstáculos, forma adulta de las plantas ni necesidades de cada especie.",
+  "privacyText": "Los formularios y las calculadoras funcionan en tu navegador. La web no guarda las consultas: al continuar, WhatsApp recibe el mensaje que has preparado y tú decides si lo envías. Las fotografías y el logo son de EACC Jardines. Las fuentes de Google Fonts pueden solicitarse al cargar la página.",
+  "analyticsText": "Si autorizas la analítica y está configurada, Google Analytics mide el uso de las páginas. No enviamos los campos del formulario ni las medidas de las herramientas a Analytics. Puedes retirar el consentimiento en las preferencias de cookies.",
+  "cookies": "Preferencias de cookies",
+  "cookieTitle": "Analítica opcional",
+  "cookieText": "Podemos usar Google Analytics para conocer qué páginas resultan útiles. Solo lo cargaremos si lo aceptas.",
+  "accept": "Aceptar analítica",
+  "reject": "Rechazar",
+  "save": "Guardar preferencias",
+  "analyticsOff": "La analítica aún no está configurada.",
+  "messageHello": "Hola, EACC Jardines. Me gustaría pedir un presupuesto sin compromiso.",
+  "messageService": "Servicio",
+  "messagePlace": "Localidad",
+  "messageDetails": "Detalles",
+  "filters": [
+    "Césped",
+    "Jardines",
+    "Terrenos",
+    "Poda y limpieza",
+    "Riego",
+    "Plantaciones"
+  ],
+  "serviceItems": [
+    {
+      "title": "Instalación de césped natural y artificial",
+      "description": "Siembra de césped natural, colocación de tepe e instalación de césped artificial. Preparamos la superficie y adaptamos la solución al uso y las características de cada espacio."
+    },
+    {
+      "title": "Preparación y acondicionamiento de terrenos",
+      "description": "Limpieza, preparación y acondicionamiento del terreno para futuras plantaciones, instalaciones de césped o renovación de zonas verdes."
+    },
+    {
+      "title": "Mantenimiento integral de jardines y zonas verdes",
+      "description": "Puestas a punto y cuidado de jardines y zonas verdes. Atendemos las necesidades de viviendas, comunidades, empresas y espacios profesionales."
+    },
+    {
+      "title": "Instalación, reparación y mantenimiento de sistemas de riego",
+      "description": "Instalamos y revisamos sistemas de riego, reparamos averías y realizamos su mantenimiento para que la instalación acompañe las necesidades de cada zona verde."
+    },
+    {
+      "title": "Podas y talas de árboles y palmeras",
+      "description": "Realizamos trabajos de poda y tala de árboles y palmeras, valorando las características de los ejemplares, su entorno y las necesidades de cada intervención."
+    },
+    {
+      "title": "Desbroces y limpieza de parcelas, terrenos y zonas verdes",
+      "description": "Retiramos vegetación y realizamos desbroces y limpieza para recuperar parcelas y espacios verdes y prepararlos para su uso o mantenimiento."
+    },
+    {
+      "title": "Creación, renovación y acondicionamiento de jardines",
+      "description": "Damos forma a nuevos jardines y renovamos espacios existentes, combinando la preparación del terreno, la vegetación y los acabados según cada proyecto."
+    },
+    {
+      "title": "Plantación de árboles, arbustos y plantas ornamentales",
+      "description": "Realizamos plantaciones y renovamos jardineras y zonas verdes, atendiendo a las características del espacio y al resultado que se busca."
+    },
+    {
+      "title": "Limpieza y acondicionamiento de espacios exteriores",
+      "description": "Ponemos a punto espacios exteriores y zonas ajardinadas, con trabajos de limpieza, preparación y acabados adaptados al entorno."
+    },
+    {
+      "title": "Otros trabajos / Solicitar asesoramiento",
+      "description": "¿Necesitas un trabajo de jardinería o acondicionamiento que no aparece aquí? Cuéntanos tu idea y estudiaremos cómo ayudarte."
+    }
+  ],
+  "projectItems": [
+    {
+      "title": "Renovación de jardín con fuente y olivos",
+      "description": "Preparación del terreno y renovación de las zonas de césped. Un montaje que reúne distintas fases del mismo trabajo."
+    },
+    {
+      "title": "Césped artificial junto a una piscina",
+      "description": "Preparación de la superficie e instalación de césped artificial alrededor de la piscina, con imágenes del proceso y del resultado."
+    },
+    {
+      "title": "Ajardinamiento de un espacio interior",
+      "description": "De la preparación del parterre a la plantación de palmeras y plantas ornamentales: distintas fases de una intervención completa."
+    },
+    {
+      "title": "Renovación de setos en una comunidad",
+      "description": "Imágenes del proceso de retirada y renovación de un cerramiento vegetal en una zona comunitaria."
+    },
+    {
+      "title": "Mantenimiento de una jardinera circular",
+      "description": "Trabajo de plantación y mantenimiento en una entrada. Las fotografías muestran la intervención y el resultado."
+    },
+    {
+      "title": "Desbroce, limpieza y poda de vegetación",
+      "description": "Un montaje del antes y el después de la intervención sobre un cerramiento vegetal junto a una vivienda."
+    },
+    {
+      "title": "Montaje de un sistema de riego",
+      "description": "Conexiones, preparación e instalación: una vista conjunta de los trabajos que hacen posible el riego de una zona verde."
+    },
+    {
+      "title": "Acondicionamiento de zonas verdes en una plaza",
+      "description": "Preparación del terreno e implantación de césped en un espacio exterior de uso común."
+    }
+  ],
+  "openMenu": "Abrir menú",
+  "closeMenu": "Cerrar menú",
+  "breadcrumbs": "Ruta de navegación"
+}

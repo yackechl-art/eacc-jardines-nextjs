@@ -42,3 +42,35 @@ Puede desplegarse en un alojamiento compatible con Next.js, por ejemplo importan
 ## Propiedad de los materiales
 
 El logo, los textos y las fotografías pertenecen a EACC Jardines. Este repositorio se ha preparado para uso privado; no se concede una licencia pública de reutilización de esos materiales.
+
+## SEO e idiomas
+
+El español es el idioma principal en `/`. Inglés, francés, alemán y portugués usan los prefijos `/en`, `/fr`, `/de` y `/pt`. El selector conserva la página equivalente y todas las rutas se generan como HTML estático.
+
+Hay 130 páginas: inicio, catálogo, diez servicios detallados, galería, ocho proyectos, dos calculadoras, índice de herramientas, contacto y privacidad, en cinco idiomas. El contenido compartido está en `data/content.json`; las traducciones y los textos de interfaz están en `data/locales/*.json`. `lib/routes.ts` genera las rutas localizadas.
+
+Cada página incluye título y descripción, URL canónica, `hreflang` recíproco con `x-default`, Open Graph y metadatos de Twitter. El atributo HTML `lang` corresponde a la URL. `/es/*` redirige permanentemente a la versión española sin prefijo.
+
+- `/sitemap.xml`: páginas e idiomas equivalentes.
+- `/robots.txt`: permite la indexación de producción; desactiva la de entornos de previsualización de Vercel.
+- `/llms.txt`: resumen verificable y enlaces para agentes de IA.
+- `/llms-full.txt`: versión ampliada con proyectos.
+- `/llm.txt` y `/LLM.txt`: alias que redirigen a `/llms.txt`.
+
+El dominio de producción acordado es `https://www.eaccjardines.com`. Se puede sobrescribir con `NEXT_PUBLIC_SITE_URL` durante la compilación. Revisa esta variable antes de publicar en otro dominio. Las rutas del sitemap deben ser públicas y devolver HTTP 200 para poder indexarse; el SEO del repositorio no modifica por sí solo una web alojada en otro servicio.
+
+Los datos estructurados JSON-LD incluyen Organization, WebSite, WebPage/CollectionPage, BreadcrumbList, Service, OfferCatalog, ItemList, ImageObject y WebApplication, según la página. Los breadcrumbs también son visibles. No se inventan precios, reseñas, calificaciones, dirección postal ni horarios. No se declara una ficha LocalBusiness completa sin disponer de una dirección real. La incorporación de estos datos o de `llms.txt` no garantiza resultados enriquecidos, indexación ni menciones de IA.
+
+## Google Tag Manager y Google Analytics
+
+Se ha seleccionado `GTM-KWWXX8G5`. El contenedor solo se carga después de aceptar la analítica. Antes de cargarlo, el consentimiento de analítica se actualiza a concedido y el de publicidad permanece denegado. El rechazo se recuerda y no carga etiquetas; al retirar un consentimiento anterior se recarga la página para dejar de cargar el contenedor. La preferencia se puede cambiar desde el pie.
+
+**Estado comprobado al implementar:** el contenedor responde HTTP 200, pero su recurso publicado tiene `tags: []`. No hay una etiqueta de GA4 publicada y, por tanto, esta instalación de GTM por sí sola todavía no mide visitas. Para activar Analytics, publica una etiqueta de Google/GA4 con el ID real de la propiedad dentro de ese contenedor y configura sus comprobaciones de consentimiento.
+
+Como alternativa, puede usarse Analytics directo con `NEXT_PUBLIC_GA_MEASUREMENT_ID=G-...` y `NEXT_PUBLIC_GTM_ID=` vacío. Se carga una sola modalidad: un contenedor GTM válido tiene prioridad. Las variables `NEXT_PUBLIC_*` son públicas y requieren volver a compilar al cambiarlas. No deben contener secretos.
+
+La modalidad directa envía páginas vistas sin parámetros de consulta ni fragmentos y no envía campos del formulario ni medidas de las calculadoras. El contenido y la política de etiquetas de un contenedor GTM se gestionan en Google Tag Manager, no en este repositorio; no añadas información personal a su capa de datos.
+
+## Calculadoras
+
+`lib/calculators.ts` contiene las fórmulas y la validación. Superficies: rectángulo, círculo y triángulo con altura perpendicular; margen opcional de material. Plantación: posiciones inclusivas entre márgenes, en línea o cuadrícula. No incorpora precios, obstáculos ni recomendaciones agronómicas. Todas las unidades de entrada están indicadas en metros y los resultados se formatean en el idioma de la página.
