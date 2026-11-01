@@ -19,7 +19,7 @@ export function Services({ locale }: { locale: Locale }) {
             <PhotoButton
               className="service-photo"
               src={"/" + s.image}
-              caption={s.title}
+              caption={s.alt}
               label={d.enlarge + ": " + s.title}
             >
               <img src={"/" + s.image} alt={s.alt} loading="lazy" />

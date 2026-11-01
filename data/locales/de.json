@@ -119,7 +119,8 @@
   "serviceItems": [
     {
       "title": "Natur- und Kunstrasen anlegen",
-      "description": "Aussaat von Naturrasen, Verlegen von Rollrasen und Kunstrasen. Wir bereiten den Untergrund vor und passen die Lösung an Nutzung und Fläche an."
+      "description": "Aussaat von Naturrasen, Verlegen von Rollrasen und Kunstrasen. Wir bereiten den Untergrund vor und passen die Lösung an Nutzung und Fläche an.",
+      "alt": "Montage der Bodenvorbereitung und des verlegten Kunstrasens neben einem Schwimmbecken"
     },
     {
       "title": "Bodenvorbereitung und Geländeaufbereitung",
@@ -147,7 +148,8 @@
     },
     {
       "title": "Bäume, Sträucher und Zierpflanzen pflanzen",
-      "description": "Bepflanzung und Erneuerung von Pflanzbeeten und Grünflächen unter Berücksichtigung des Standorts und des gewünschten Ergebnisses."
+      "description": "Bepflanzung und Erneuerung von Pflanzbeeten und Grünflächen unter Berücksichtigung des Standorts und des gewünschten Ergebnisses.",
+      "alt": "Montage der Vorbereitung eines Innenbeets und der Pflanzung von Palmen und Zierpflanzen"
     },
     {
       "title": "Außenbereiche reinigen und aufbereiten",
@@ -176,8 +178,9 @@
       "description": "Bilder der Entfernung und Erneuerung einer grünen Begrenzung im Gemeinschaftsbereich."
     },
     {
-      "title": "Pflege eines runden Pflanzbeets",
-      "description": "Bepflanzung und Pflege im Eingangsbereich mit Fotos der Arbeiten und des Ergebnisses."
+      "title": "Gartenerneuerung mit weißem Kies und Kakteen",
+      "description": "Vorbereitung eines Gartens an einer Mauer und Gestaltung mit weißem Kies, Kakteen und einem Palmfarn. Die Montage zeigt den Ausgangszustand und das Ergebnis.",
+      "alt": "Vorher-Nachher-Montage eines Gartens mit weißem Kies, Kakteen und einem Palmfarn"
     },
     {
       "title": "Freischnitt, Reinigung und Rückschnitt",

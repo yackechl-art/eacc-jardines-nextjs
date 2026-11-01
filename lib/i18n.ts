@@ -43,13 +43,14 @@ export function getContent(locale: Locale) {
       ...d.serviceItems[i],
       id: String(i),
       slug: slugify(d.serviceItems[i].title),
-      alt: d.serviceItems[i].title,
+      alt: d.serviceItems[i].alt || d.serviceItems[i].title,
     })),
     projects: source.projects.map((p, i) => ({
       ...p,
       ...d.projectItems[i],
       id: String(i),
       slug: slugify(d.projectItems[i].title),
+      alt: d.projectItems[i].alt || d.projectItems[i].title,
       tag: [...new Set(p.categories.map((k) => labels[k]))].join(" · "),
     })),
   };
