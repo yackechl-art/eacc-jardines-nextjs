@@ -1936,3 +1936,11 @@ dialog p {
     height: auto;
   }
 }
+
+.drainage-calculator h2 { margin: 28px 0 18px; }
+.drainage-controls { display: flex; flex-wrap: wrap; align-items: center; gap: 24px; margin-bottom: 20px; }
+.drainage-controls label { display: grid; gap: 10px; flex: 1 1 180px; }
+.drainage-controls input { width: 100%; accent-color: var(--ink); }
+.drainage-controls .button { margin: 0; cursor: pointer; }
+.drainage-preview { height: 380px; width: 100%; overflow: hidden; border-radius: 8px; background: #f0f2e9; }
+@media (max-width: 760px) { .drainage-preview { height: 280px; } }

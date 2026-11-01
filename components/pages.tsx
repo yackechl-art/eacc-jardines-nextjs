@@ -13,6 +13,7 @@ import { Services } from "./services";
 import { Gallery } from "./gallery";
 import { QuoteForm } from "./quote-form";
 import { FloatingContact } from "./floating-contact";
+import { DrainageCalculator } from "./drainage-calculator";
 import { Calculator } from "./calculator";
 import { Analytics } from "./analytics";
 
@@ -70,11 +71,11 @@ function ToolCards({ locale }: { locale: Locale }) {
   const d = getDictionary(locale);
   return (
     <div className="tool-grid">
-      {(["area", "spacing"] as const).map((kind) => (
+      {(["area", "spacing", "drainage"] as const).map((kind) => (
         <article className="tool-card" key={kind}>
-          <span className="service-icon">{kind === "area" ? "▧" : "✳"}</span>
-          <h2>{kind === "area" ? d.areaTitle : d.spacingTitle}</h2>
-          <p>{kind === "area" ? d.areaIntro : d.spacingIntro}</p>
+          <span className="service-icon">{kind === "area" ? "▧" : kind === "spacing" ? "✳" : "↘"}</span>
+          <h2>{kind === "area" ? d.areaTitle : kind === "spacing" ? d.spacingTitle : d.drainageTitle}</h2>
+          <p>{kind === "area" ? d.areaIntro : kind === "spacing" ? d.spacingIntro : d.drainageIntro}</p>
           <a className="text-link" href={pathFor(locale, kind)}>
             {d.more} ↗
           </a>
@@ -336,10 +337,10 @@ export function SitePage({ route }: { route: Route }) {
             <ToolCards locale={locale} />
           </section>
         )}
-        {(kind === "area" || kind === "spacing") && (
+        {(kind === "area" || kind === "spacing" || kind === "drainage") && (
           <section className="section tool-page">
             <PageIntro title={text.title} text={text.description} />
-            <Calculator kind={kind} d={d} locale={locale} />
+            {kind === "drainage" ? <DrainageCalculator d={d} locale={locale} /> : <Calculator kind={kind} d={d} locale={locale} />}
             <a className="button" href={pathFor(locale, "contact")}>
               {d.quote} ↗
             </a>

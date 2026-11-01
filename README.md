@@ -47,7 +47,7 @@ El logo, los textos y las fotografías pertenecen a EACC Jardines. Este reposito
 
 El español es el idioma principal en `/`. Inglés, francés, alemán y portugués usan los prefijos `/en`, `/fr`, `/de` y `/pt`. El selector conserva la página equivalente y todas las rutas se generan como HTML estático.
 
-Hay 130 páginas: inicio, catálogo, diez servicios detallados, galería, ocho proyectos, dos calculadoras, índice de herramientas, contacto y privacidad, en cinco idiomas. El contenido compartido está en `data/content.json`; las traducciones y los textos de interfaz están en `data/locales/*.json`. `lib/routes.ts` genera las rutas localizadas.
+Hay 135 páginas: inicio, catálogo, diez servicios detallados, galería, ocho proyectos, tres calculadoras, índice de herramientas, contacto y privacidad, en cinco idiomas. El contenido compartido está en `data/content.json`; las traducciones y los textos de interfaz están en `data/locales/*.json`. `lib/routes.ts` genera las rutas localizadas.
 
 Cada página incluye título y descripción, URL canónica, `hreflang` recíproco con `x-default`, Open Graph y metadatos de Twitter. El atributo HTML `lang` corresponde a la URL. `/es/*` redirige permanentemente a la versión española sin prefijo.
 
@@ -78,3 +78,7 @@ La modalidad directa envía páginas vistas sin parámetros de consulta ni fragm
 ## Calculadoras
 
 `lib/calculators.ts` contiene las fórmulas y la validación. Superficies: rectángulo, círculo y triángulo con altura perpendicular; margen opcional de material. Plantación: posiciones inclusivas entre márgenes, en línea o cuadrícula. No incorpora precios, obstáculos ni recomendaciones agronómicas. Todas las unidades de entrada están indicadas en metros y los resultados se formatean en el idioma de la página.
+
+### Pendientes de drenaje
+
+La tercera herramienta permite calcular desde pendiente, desnivel o cotas. Longitud horizontal en metros y cotas de solera respecto a una referencia común; admite pendientes inversas y cotas negativas. La vista 3D se carga solo en esta herramienta, usa React Three Fiber y geometrías primitivas, y permite girar, inclinar y pausar el agua. Respeta movimiento reducido y mantiene los resultados si WebGL falla. El movimiento es ilustrativo y no simula hidráulica.

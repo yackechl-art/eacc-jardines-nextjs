@@ -163,7 +163,7 @@ export function structuredData(r: Route) {
         url: absolute(pathFor(r.locale, "project", i)),
       })),
     });
-  if (r.kind === "area" || r.kind === "spacing")
+  if (r.kind === "area" || r.kind === "spacing" || r.kind === "drainage")
     graph.push({
       "@type": "WebApplication",
       name: title,
