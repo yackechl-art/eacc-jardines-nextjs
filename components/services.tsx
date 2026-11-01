@@ -20,11 +20,11 @@ export function Services({ locale }: { locale: Locale }) {
             <PhotoButton
               className="service-photo"
               src={"/" + s.image}
-              caption={s.title}
+              caption={i === 0 ? s.alt : s.title}
               serviceResult={i}
               label={d.enlarge + ": " + s.title}
             >
-              <ServiceResult src={"/" + s.image} alt={s.title} index={i} />
+              <ServiceResult src={"/" + s.image} alt={i === 0 ? s.alt : s.title} index={i} />
               <span className="project-open">↗</span>
             </PhotoButton>
             <div className="service-body">
