@@ -14,6 +14,13 @@ declare global {
 }
 const mode = trackingMode(TRACKING.gtmId, TRACKING.gaId),
   storageKey = "eacc-analytics-consent-v1";
+const labels = {
+  es: { necessary: "Cookies necesarias (siempre activas)", necessaryText: "Permiten el funcionamiento de la web y recordar tu elección.", analytics: "Cookies de analítica", analyticsText: "Permiten medir las visitas y el uso de la web. Solo se activan si las autorizas.", save: "Guardar preferencias" },
+  en: { necessary: "Necessary cookies (always active)", necessaryText: "Enable the website to work and remember your choice.", analytics: "Analytics cookies", analyticsText: "Measure visits and website usage. Only enabled with your permission.", save: "Save preferences" },
+  fr: { necessary: "Cookies nécessaires (toujours actifs)", necessaryText: "Permettent le fonctionnement du site et mémorisent votre choix.", analytics: "Cookies de mesure d’audience", analyticsText: "Mesurent les visites et l’utilisation du site, uniquement avec votre autorisation.", save: "Enregistrer mes préférences" },
+  de: { necessary: "Notwendige Cookies (immer aktiv)", necessaryText: "Ermöglichen den Betrieb der Website und speichern Ihre Auswahl.", analytics: "Analyse-Cookies", analyticsText: "Messen Besuche und die Nutzung der Website, nur mit Ihrer Einwilligung.", save: "Einstellungen speichern" },
+  pt: { necessary: "Cookies necessários (sempre ativos)", necessaryText: "Permitem o funcionamento do site e guardam a sua escolha.", analytics: "Cookies de análise", analyticsText: "Medem as visitas e a utilização do site, apenas com a sua autorização.", save: "Guardar preferências" },
+};
 function prepareConsent() {
   window.dataLayer = window.dataLayer || [];
   window.gtag =
@@ -38,17 +45,20 @@ function prepareConsent() {
     window.dataLayer.push({ "gtm.start": Date.now(), event: "gtm.js" });
 }
 export function Analytics() {
-  const { d } = useSite(),
+  const { d, locale } = useSite(),
+    copy = labels[locale],
     pathname = usePathname(),
     [consent, setConsent] = useState<string | null>(null),
     [ready, setReady] = useState(false),
     [open, setOpen] = useState(false),
+    [analyticsAllowed, setAnalyticsAllowed] = useState(false),
     last = useRef("");
   useEffect(() => {
     try {
       const saved = localStorage.getItem(storageKey);
       if (saved === "granted" && mode) prepareConsent();
       setConsent(saved === "granted" || saved === "denied" ? saved : null);
+      setAnalyticsAllowed(saved === "granted");
     } catch {
       setConsent(null);
     }
@@ -90,6 +100,7 @@ export function Analytics() {
           document.cookie = `${name}=; Max-Age=0; path=/; domain=.${parts.slice(i).join(".")}`;
       }
     }
+    setAnalyticsAllowed(value === "granted");
     setConsent(value);
     setOpen(false);
     if (revoke) window.location.reload();
@@ -109,7 +120,10 @@ export function Analytics() {
       <button
         className="cookie-settings"
         type="button"
-        onClick={() => setOpen(true)}
+        onClick={() => {
+          setAnalyticsAllowed(consent === "granted");
+          setOpen(true);
+        }}
       >
         {d.cookies}
       </button>
@@ -132,7 +146,33 @@ export function Analytics() {
         <section className="cookie-panel" aria-label={d.cookies}>
           <h2>{d.cookieTitle}</h2>
           <p>{mode ? d.cookieText : d.analyticsOff}</p>
+          <fieldset style={{ border: 0, padding: 0, margin: "1rem 0" }}>
+            <legend>{d.cookies}</legend>
+            <label style={{ display: "block", margin: "0.75rem 0" }}>
+              <input type="checkbox" checked disabled /> {copy.necessary}
+              <small style={{ display: "block" }}>{copy.necessaryText}</small>
+            </label>
+            {mode && (
+              <label style={{ display: "block", margin: "0.75rem 0" }}>
+                <input
+                  type="checkbox"
+                  checked={analyticsAllowed}
+                  onChange={(event) => setAnalyticsAllowed(event.target.checked)}
+                />{" "}
+                {copy.analytics}
+                <small style={{ display: "block" }}>{copy.analyticsText}</small>
+              </label>
+            )}
+          </fieldset>
           <div>
+            {mode && (
+              <button
+                className="button"
+                onClick={() => choose(analyticsAllowed ? "granted" : "denied")}
+              >
+                {copy.save}
+              </button>
+            )}
             {mode && (
               <button className="button" onClick={() => choose("granted")}>
                 {d.accept}
