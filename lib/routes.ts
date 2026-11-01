@@ -15,6 +15,7 @@ export type PageKind =
   | "tools"
   | "area"
   | "spacing"
+  | "drainage"
   | "contact"
   | "privacy";
 export type Route = { locale: Locale; kind: PageKind; id?: number };
@@ -38,8 +39,8 @@ export function pathFor(
     path = `${sections.services}/${data.services[id ?? 0]?.slug}`;
   else if (kind === "project")
     path = `${sections.projects}/${data.projects[id ?? 0]?.slug}`;
-  else if (kind === "area" || kind === "spacing")
-    path = `${sections.tools}/${slugify(kind === "area" ? d.areaTitle : d.spacingTitle)}`;
+  else if (kind === "area" || kind === "spacing" || kind === "drainage")
+    path = `${sections.tools}/${slugify(kind === "area" ? d.areaTitle : kind === "spacing" ? d.spacingTitle : d.drainageTitle)}`;
   else if (kind !== "home") path = sections[kind];
   return prefix + (path ? "/" + path : "") || "/";
 }
@@ -53,6 +54,7 @@ export function allRoutes(): Route[] {
         "tools",
         "area",
         "spacing",
+        "drainage",
         "contact",
         "privacy",
       ] as PageKind[]
@@ -87,6 +89,7 @@ export function routeText(r: Route) {
       tools: d.toolsTitle,
       area: d.areaTitle,
       spacing: d.spacingTitle,
+      drainage: d.drainageTitle,
       contact: d.contactTitle,
       privacy: d.privacy,
       service: data.services[r.id ?? 0]?.title,
@@ -99,6 +102,7 @@ export function routeText(r: Route) {
       tools: d.toolsIntro,
       area: d.areaIntro,
       spacing: d.spacingIntro,
+      drainage: d.drainageIntro,
       contact: d.contactIntro,
       privacy: d.privacyText,
       service: data.services[r.id ?? 0]?.description,
@@ -114,7 +118,7 @@ export function breadcrumbs(r: Route) {
     items.push({ name: d.services, path: pathFor(r.locale, "services") });
   if (r.kind === "project")
     items.push({ name: d.projects, path: pathFor(r.locale, "projects") });
-  if (r.kind === "area" || r.kind === "spacing")
+  if (r.kind === "area" || r.kind === "spacing" || r.kind === "drainage")
     items.push({ name: d.tools, path: pathFor(r.locale, "tools") });
   items.push({
     name: routeText(r).title,

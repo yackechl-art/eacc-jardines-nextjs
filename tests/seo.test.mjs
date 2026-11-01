@@ -12,7 +12,7 @@ import { llmsText } from "../lib/llms.ts";
 import { trackingMode } from "../lib/tracking-config.ts";
 test("every translated route is unique, resolvable and has reciprocal language alternatives", () => {
   const routes = allRoutes();
-  assert.equal(routes.length, 130);
+  assert.equal(routes.length, 135);
   assert.equal(
     new Set(routes.map((r) => pathFor(r.locale, r.kind, r.id))).size,
     routes.length,
