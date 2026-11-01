@@ -1,6 +1,7 @@
 import { getContent, getDictionary, type Locale } from "@/lib/i18n";
 import { pathFor } from "@/lib/routes";
 import { PhotoButton } from "./site-provider";
+import { ServiceResult } from "./service-result";
 export function Services({ locale }: { locale: Locale }) {
   const d = getDictionary(locale),
     { services } = getContent(locale);
@@ -19,10 +20,11 @@ export function Services({ locale }: { locale: Locale }) {
             <PhotoButton
               className="service-photo"
               src={"/" + s.image}
-              caption={s.alt}
+              caption={s.title}
+              serviceResult={i}
               label={d.enlarge + ": " + s.title}
             >
-              <img src={"/" + s.image} alt={s.alt} loading="lazy" />
+              <ServiceResult src={"/" + s.image} alt={s.title} index={i} />
               <span className="project-open">↗</span>
             </PhotoButton>
             <div className="service-body">
