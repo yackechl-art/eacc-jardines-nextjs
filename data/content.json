@@ -1,0 +1,146 @@
+{
+  "services": [
+    {
+      "title": "Instalación de césped natural y artificial",
+      "description": "Siembra de césped natural, colocación de tepe e instalación de césped artificial. Preparamos la superficie y adaptamos la solución al uso y las características de cada espacio.",
+      "image": "assets/cesped-natural-servicio.png",
+      "alt": "Montaje del acondicionamiento de un patio y el resultado con césped natural"
+    },
+    {
+      "title": "Preparación y acondicionamiento de terrenos",
+      "description": "Limpieza, preparación y acondicionamiento del terreno para futuras plantaciones, instalaciones de césped o renovación de zonas verdes.",
+      "image": "assets/terreno-servicio.png",
+      "alt": "Montaje de las distintas fases de preparación de un patio entre muros"
+    },
+    {
+      "title": "Mantenimiento integral de jardines y zonas verdes",
+      "description": "Puestas a punto y cuidado de jardines y zonas verdes. Atendemos las necesidades de viviendas, comunidades, empresas y espacios profesionales.",
+      "image": "assets/mantenimiento-servicio.png",
+      "alt": "Montaje del mantenimiento y poda de un seto junto a un paseo"
+    },
+    {
+      "title": "Instalación, reparación y mantenimiento de sistemas de riego",
+      "description": "Instalamos y revisamos sistemas de riego, reparamos averías y realizamos su mantenimiento para que la instalación acompañe las necesidades de cada zona verde.",
+      "image": "assets/riego-servicio.png",
+      "alt": "Montaje real de conexiones, zanjas e instalación de un sistema de riego"
+    },
+    {
+      "title": "Podas y talas de árboles y palmeras",
+      "description": "Realizamos trabajos de poda y tala de árboles y palmeras, valorando las características de los ejemplares, su entorno y las necesidades de cada intervención.",
+      "image": "assets/poda-servicio.png",
+      "alt": "Montaje de árboles antes y después de un trabajo de poda"
+    },
+    {
+      "title": "Desbroces y limpieza de parcelas, terrenos y zonas verdes",
+      "description": "Retiramos vegetación y realizamos desbroces y limpieza para recuperar parcelas y espacios verdes y prepararlos para su uso o mantenimiento.",
+      "image": "assets/desbroce-montaje.png",
+      "alt": "Montaje de la limpieza y poda de un cerramiento vegetal junto a una vivienda"
+    },
+    {
+      "title": "Creación, renovación y acondicionamiento de jardines",
+      "description": "Damos forma a nuevos jardines y renovamos espacios existentes, combinando la preparación del terreno, la vegetación y los acabados según cada proyecto.",
+      "image": "assets/diseno-servicio.png",
+      "alt": "Montaje de la transformación de un jardín con grava decorativa y plantas"
+    },
+    {
+      "title": "Plantación de árboles, arbustos y plantas ornamentales",
+      "description": "Realizamos plantaciones y renovamos jardineras y zonas verdes, atendiendo a las características del espacio y al resultado que se busca.",
+      "image": "assets/plantaciones-servicio.png",
+      "alt": "Montaje de una jardinera inclinada entre escaleras con plantas ornamentales"
+    },
+    {
+      "title": "Limpieza y acondicionamiento de espacios exteriores",
+      "description": "Ponemos a punto espacios exteriores y zonas ajardinadas, con trabajos de limpieza, preparación y acabados adaptados al entorno.",
+      "image": "assets/exteriores-servicio.jpg",
+      "alt": "Montaje del antes y después de un exterior acondicionado con grava junto a una fachada"
+    },
+    {
+      "title": "Otros trabajos / Solicitar asesoramiento",
+      "description": "¿Necesitas un trabajo de jardinería o acondicionamiento que no aparece aquí? Cuéntanos tu idea y estudiaremos cómo ayudarte.",
+      "image": "assets/otros-servicio.png",
+      "alt": "Selección de trabajos reales de jardinería y acondicionamiento de EACC Jardines"
+    }
+  ],
+  "projects": [
+    {
+      "title": "Renovación de jardín con fuente y olivos",
+      "description": "Preparación del terreno y renovación de las zonas de césped. Un montaje que reúne distintas fases del mismo trabajo.",
+      "image": "assets/jardin-montaje.png",
+      "categories": [
+        "jardines",
+        "cesped",
+        "terrenos"
+      ],
+      "tag": "Jardines · Césped natural"
+    },
+    {
+      "title": "Césped artificial junto a una piscina",
+      "description": "Preparación de la superficie e instalación de césped artificial alrededor de la piscina, con imágenes del proceso y del resultado.",
+      "image": "assets/cesped-artificial-montaje.png",
+      "categories": [
+        "cesped",
+        "terrenos"
+      ],
+      "tag": "Césped artificial · Preparación del terreno"
+    },
+    {
+      "title": "Ajardinamiento de un espacio interior",
+      "description": "De la preparación del parterre a la plantación de palmeras y plantas ornamentales: distintas fases de una intervención completa.",
+      "image": "assets/interior-montaje.png",
+      "categories": [
+        "jardines",
+        "plantaciones"
+      ],
+      "tag": "Plantaciones · Jardín interior"
+    },
+    {
+      "title": "Renovación de setos en una comunidad",
+      "description": "Imágenes del proceso de retirada y renovación de un cerramiento vegetal en una zona comunitaria.",
+      "image": "assets/setos-comunidad-montaje.png",
+      "categories": [
+        "jardines",
+        "plantaciones"
+      ],
+      "tag": "Comunidades · Renovación de setos"
+    },
+    {
+      "title": "Mantenimiento de una jardinera circular",
+      "description": "Trabajo de plantación y mantenimiento en una entrada. Las fotografías muestran la intervención y el resultado.",
+      "image": "assets/jardinera-montaje.png",
+      "categories": [
+        "jardines",
+        "plantaciones"
+      ],
+      "tag": "Mantenimiento · Jardineras"
+    },
+    {
+      "title": "Desbroce, limpieza y poda de vegetación",
+      "description": "Un montaje del antes y el después de la intervención sobre un cerramiento vegetal junto a una vivienda.",
+      "image": "assets/desbroce-montaje.png",
+      "categories": [
+        "poda",
+        "limpieza"
+      ],
+      "tag": "Desbroces · Poda · Limpieza"
+    },
+    {
+      "title": "Montaje de un sistema de riego",
+      "description": "Conexiones, preparación e instalación: una vista conjunta de los trabajos que hacen posible el riego de una zona verde.",
+      "image": "assets/riego-montaje.png",
+      "categories": [
+        "riego"
+      ],
+      "tag": "Instalación · Sistemas de riego"
+    },
+    {
+      "title": "Acondicionamiento de zonas verdes en una plaza",
+      "description": "Preparación del terreno e implantación de césped en un espacio exterior de uso común.",
+      "image": "assets/plaza-montaje.png",
+      "categories": [
+        "terrenos",
+        "cesped"
+      ],
+      "tag": "Acondicionamiento · Zonas verdes"
+    }
+  ]
+}
