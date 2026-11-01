@@ -119,7 +119,8 @@
   "serviceItems": [
     {
       "title": "Installation de gazon naturel et synthétique",
-      "description": "Semis de gazon naturel, pose de gazon en rouleaux et installation de gazon synthétique. Nous préparons la surface et adaptons la solution à l’usage et aux caractéristiques du lieu."
+      "description": "Semis de gazon naturel, pose de gazon en rouleaux et installation de gazon synthétique. Nous préparons la surface et adaptons la solution à l’usage et aux caractéristiques du lieu.",
+      "alt": "Montage de la préparation du sol et du gazon synthétique installé près d’une piscine"
     },
     {
       "title": "Préparation et aménagement des terrains",
@@ -147,7 +148,8 @@
     },
     {
       "title": "Plantation d’arbres, arbustes et plantes ornementales",
-      "description": "Plantation et renouvellement des jardinières et espaces verts selon les caractéristiques du lieu et le résultat recherché."
+      "description": "Plantation et renouvellement des jardinières et espaces verts selon les caractéristiques du lieu et le résultat recherché.",
+      "alt": "Montage de la préparation d’un parterre intérieur et de la plantation de palmiers et de plantes ornementales"
     },
     {
       "title": "Nettoyage et aménagement des espaces extérieurs",
@@ -176,8 +178,9 @@
       "description": "Images du retrait et du renouvellement d’une clôture végétale dans un espace collectif."
     },
     {
-      "title": "Entretien d’une jardinière circulaire",
-      "description": "Plantation et entretien d’une entrée, avec des photos des travaux et du résultat."
+      "title": "Rénovation de jardin avec gravier blanc et cactus",
+      "description": "Préparation d’un jardin le long d’un mur et finition avec du gravier blanc, des cactus et un cycas. Le montage montre l’état initial et le résultat.",
+      "alt": "Montage avant et après d’un jardin avec gravier blanc, cactus et cycas"
     },
     {
       "title": "Débroussaillage, nettoyage et taille",

@@ -119,7 +119,8 @@
   "serviceItems": [
     {
       "title": "Instalación de césped natural y artificial",
-      "description": "Siembra de césped natural, colocación de tepe e instalación de césped artificial. Preparamos la superficie y adaptamos la solución al uso y las características de cada espacio."
+      "description": "Siembra de césped natural, colocación de tepe e instalación de césped artificial. Preparamos la superficie y adaptamos la solución al uso y las características de cada espacio.",
+      "alt": "Montaje de la preparación del terreno y el césped artificial instalado junto a una piscina"
     },
     {
       "title": "Preparación y acondicionamiento de terrenos",
@@ -147,7 +148,8 @@
     },
     {
       "title": "Plantación de árboles, arbustos y plantas ornamentales",
-      "description": "Realizamos plantaciones y renovamos jardineras y zonas verdes, atendiendo a las características del espacio y al resultado que se busca."
+      "description": "Realizamos plantaciones y renovamos jardineras y zonas verdes, atendiendo a las características del espacio y al resultado que se busca.",
+      "alt": "Montaje de la preparación de un parterre interior y la plantación de palmeras y plantas ornamentales"
     },
     {
       "title": "Limpieza y acondicionamiento de espacios exteriores",
@@ -176,8 +178,9 @@
       "description": "Imágenes del proceso de retirada y renovación de un cerramiento vegetal en una zona comunitaria."
     },
     {
-      "title": "Mantenimiento de una jardinera circular",
-      "description": "Trabajo de plantación y mantenimiento en una entrada. Las fotografías muestran la intervención y el resultado."
+      "title": "Renovación de jardín con grava blanca y cactus",
+      "description": "Preparación de un jardín junto a una pared y acabado con grava blanca, cactus y una cica. El montaje muestra el estado inicial y el resultado.",
+      "alt": "Montaje del antes y después de un jardín con grava blanca, cactus y una cica"
     },
     {
       "title": "Desbroce, limpieza y poda de vegetación",

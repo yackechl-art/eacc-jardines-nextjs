@@ -209,7 +209,7 @@ function Detail({ route }: { route: Route }) {
             caption={item.title + ". " + item.description}
             label={d.enlarge}
           >
-            <img src={"/" + item.image} alt={item.title} />
+            <img src={"/" + item.image} alt={item.alt} />
             <span>{d.enlarge} ↗</span>
           </PhotoButton>
         </div>
@@ -230,7 +230,7 @@ function Detail({ route }: { route: Route }) {
             <div className="related-grid">
               {related.map((p) => (
                 <a key={p.href} href={p.href}>
-                  <img src={"/" + p.image} alt={p.title} loading="lazy" />
+                  <img src={"/" + p.image} alt={p.alt} loading="lazy" />
                   <h3>{p.title}</h3>
                   <span>{d.more} ↗</span>
                 </a>

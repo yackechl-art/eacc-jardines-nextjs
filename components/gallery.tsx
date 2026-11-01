@@ -3,6 +3,7 @@ import { useState } from "react";
 import { useSite, PhotoButton } from "./site-provider";
 type Project = {
   title: string;
+  alt: string;
   description: string;
   image: string;
   categories: string[];
@@ -55,7 +56,7 @@ export function Gallery({ projects }: { projects: Project[] }) {
               caption={p.title + ". " + p.description}
               label={d.enlarge + ": " + p.title}
             >
-              <img src={"/" + p.image} alt={p.title} loading="lazy" />
+              <img src={"/" + p.image} alt={p.alt} loading="lazy" />
               <span className="project-open">↗</span>
             </PhotoButton>
             <div className="project-meta">

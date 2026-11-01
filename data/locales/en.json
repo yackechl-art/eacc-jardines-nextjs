@@ -119,7 +119,8 @@
   "serviceItems": [
     {
       "title": "Natural and artificial lawn installation",
-      "description": "Natural grass seeding, turf laying and artificial lawn installation. We prepare the surface and adapt the solution to the use and characteristics of each space."
+      "description": "Natural grass seeding, turf laying and artificial lawn installation. We prepare the surface and adapt the solution to the use and characteristics of each space.",
+      "alt": "Montage of ground preparation and artificial turf installed beside a swimming pool"
     },
     {
       "title": "Ground preparation and conditioning",
@@ -147,7 +148,8 @@
     },
     {
       "title": "Tree, shrub and ornamental planting",
-      "description": "Planting and renewal of planters and green spaces, taking account of the location and the desired result."
+      "description": "Planting and renewal of planters and green spaces, taking account of the location and the desired result.",
+      "alt": "Montage of indoor planting bed preparation and planting of palms and ornamental plants"
     },
     {
       "title": "Outdoor space cleaning and conditioning",
@@ -176,8 +178,9 @@
       "description": "Images of removing and renewing a planted boundary in a shared residential area."
     },
     {
-      "title": "Circular planter maintenance",
-      "description": "Planting and maintenance at an entrance, with photographs of the work and result."
+      "title": "Garden renovation with white gravel and cacti",
+      "description": "Preparation of a garden beside a wall and finishing with white gravel, cacti and a cycad. The montage shows the initial condition and the result.",
+      "alt": "Before-and-after montage of a garden with white gravel, cacti and a cycad"
     },
     {
       "title": "Vegetation clearance, cleaning and pruning",

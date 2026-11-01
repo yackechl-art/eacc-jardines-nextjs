@@ -119,7 +119,8 @@
   "serviceItems": [
     {
       "title": "Instalação de relva natural e artificial",
-      "description": "Sementeira de relva natural, colocação de tapetes de relva e instalação de relva artificial. Preparamos a superfície e adaptamos a solução ao uso e às características do espaço."
+      "description": "Sementeira de relva natural, colocação de tapetes de relva e instalação de relva artificial. Preparamos a superfície e adaptamos a solução ao uso e às características do espaço.",
+      "alt": "Montagem da preparação do terreno e da relva artificial instalada junto a uma piscina"
     },
     {
       "title": "Preparação e acondicionamento de terrenos",
@@ -147,7 +148,8 @@
     },
     {
       "title": "Plantação de árvores, arbustos e plantas ornamentais",
-      "description": "Plantações e renovação de canteiros e espaços verdes, respeitando as características do local e o resultado pretendido."
+      "description": "Plantações e renovação de canteiros e espaços verdes, respeitando as características do local e o resultado pretendido.",
+      "alt": "Montagem da preparação de um canteiro interior e da plantação de palmeiras e plantas ornamentais"
     },
     {
       "title": "Limpeza e acondicionamento de espaços exteriores",
@@ -176,8 +178,9 @@
       "description": "Imagens da remoção e renovação de uma vedação vegetal numa zona comum."
     },
     {
-      "title": "Manutenção de um canteiro circular",
-      "description": "Plantação e manutenção numa entrada, com fotografias da intervenção e do resultado."
+      "title": "Renovação de jardim com gravilha branca e cactos",
+      "description": "Preparação de um jardim junto a um muro e acabamento com gravilha branca, cactos e uma cica. A montagem mostra o estado inicial e o resultado.",
+      "alt": "Montagem do antes e depois de um jardim com gravilha branca, cactos e uma cica"
     },
     {
       "title": "Desmatação, limpeza e poda de vegetação",
