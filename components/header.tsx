@@ -24,7 +24,7 @@ export function Header({
       </a>
       <div className="topline">
         <span>{d.country}</span>
-        <a href={"tel:+" + (d.settings || defaultSettings).phone}>{d.help} · {(d.settings || defaultSettings).displayPhone} ↗</a>
+        <a href={"tel:+" + (d.settings || defaultSettings).phone}>{d.callLabel} ↗</a>
       </div>
       <header>
         <a

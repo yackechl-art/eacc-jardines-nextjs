@@ -59,8 +59,8 @@ export function Contact({ locale, copy }: { locale: Locale; copy?: Dictionary })
         <p className="eyebrow">04 / {d.contact}</p>
         <h2>{d.contactTitle}</h2>
         <p>{d.contactIntro}</p>
-        <a className="phone" href={"tel:+" + (d.settings || defaultSettings).phone}>
-          {(d.settings || defaultSettings).displayPhone} <span>↗</span>
+        <a className="button" href={"tel:+" + (d.settings || defaultSettings).phone}>
+          {d.callLabel} <span>↗</span>
         </a>
         <span className="phone-label">{d.whatsapp}</span>
         <div className="contact-brand">
@@ -367,7 +367,7 @@ export function SitePage({ route, copy }: { route: Route; copy?: Dictionary }) {
             <p>{d.analyticsText}</p>
             <h2>{d.contact}</h2>
             <p>
-              {(d.settings || defaultSettings).brandName} · <a href="tel:+34663318795">{(d.settings || defaultSettings).displayPhone}</a>
+              {(d.settings || defaultSettings).brandName} · <a href={"tel:+" + (d.settings || defaultSettings).phone}>{d.callLabel}</a>
             </p>
           </section>
         )}

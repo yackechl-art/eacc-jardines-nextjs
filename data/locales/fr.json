@@ -230,5 +230,6 @@
   "emailSuccess": "Votre demande a été envoyée. Nous répondrons par e-mail.",
   "emailError": "Échec de l’envoi. Réessayez ou utilisez WhatsApp.",
   "emailFormNote": "FormSubmit traite les demandes par e-mail pour les envoyer à eaccjardines@gmail.com. Vous pouvez aussi utiliser WhatsApp.",
-  "emailPrivacyText": "Vos coordonnées et votre demande servent à vous répondre. Les e-mails passent par FormSubmit, qui conserve une archive pendant 30 jours. Avec WhatsApp, le message s’ouvre dans ce service et vous décidez de l’envoyer. Les calculateurs fonctionnent dans votre navigateur. Les photos et le logo appartiennent à EACC Jardines. Google Fonts peut être sollicité au chargement."
+  "emailPrivacyText": "Vos coordonnées et votre demande servent à vous répondre. Les e-mails passent par FormSubmit, qui conserve une archive pendant 30 jours. Avec WhatsApp, le message s’ouvre dans ce service et vous décidez de l’envoyer. Les calculateurs fonctionnent dans votre navigateur. Les photos et le logo appartiennent à EACC Jardines. Google Fonts peut être sollicité au chargement.",
+  "callLabel": "Appeler"
 }

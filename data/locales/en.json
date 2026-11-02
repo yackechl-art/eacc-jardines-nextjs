@@ -230,5 +230,6 @@
   "emailSuccess": "Your enquiry has been sent. We will reply by email.",
   "emailError": "Unable to send. Try again or use WhatsApp.",
   "emailFormNote": "FormSubmit processes email enquiries for delivery to eaccjardines@gmail.com. You can also use WhatsApp.",
-  "emailPrivacyText": "Your contact details and enquiry are used to respond to your request. Email delivery uses FormSubmit, which retains an archive for 30 days. If you choose WhatsApp, your message opens in that service and you decide whether to send it. Calculators run in your browser. Photos and logo belong to EACC Jardines. Google Fonts may be requested when the page loads."
+  "emailPrivacyText": "Your contact details and enquiry are used to respond to your request. Email delivery uses FormSubmit, which retains an archive for 30 days. If you choose WhatsApp, your message opens in that service and you decide whether to send it. Calculators run in your browser. Photos and logo belong to EACC Jardines. Google Fonts may be requested when the page loads.",
+  "callLabel": "Call us"
 }

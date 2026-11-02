@@ -230,5 +230,6 @@
   "emailSuccess": "A sua consulta foi enviada. Responderemos por e-mail.",
   "emailError": "Não foi possível enviar. Tente novamente ou use o WhatsApp.",
   "emailFormNote": "O FormSubmit processa as consultas por e-mail para entrega a eaccjardines@gmail.com. Também pode usar o WhatsApp.",
-  "emailPrivacyText": "Os seus dados de contacto e a consulta são usados para responder ao seu pedido. O envio por e-mail utiliza o FormSubmit, que mantém um arquivo durante 30 dias. Ao escolher WhatsApp, a mensagem abre nesse serviço e decide se a envia. As calculadoras funcionam no navegador. As fotos e o logótipo pertencem à EACC Jardines. O Google Fonts pode ser solicitado ao carregar a página."
+  "emailPrivacyText": "Os seus dados de contacto e a consulta são usados para responder ao seu pedido. O envio por e-mail utiliza o FormSubmit, que mantém um arquivo durante 30 dias. Ao escolher WhatsApp, a mensagem abre nesse serviço e decide se a envia. As calculadoras funcionam no navegador. As fotos e o logótipo pertencem à EACC Jardines. O Google Fonts pode ser solicitado ao carregar a página.",
+  "callLabel": "Ligar"
 }
