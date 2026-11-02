@@ -1,4 +1,6 @@
 "use client";
+import { defaultSettings } from "@/lib/i18n";
+
 import { useState } from "react";
 import { useSite } from "./site-provider";
 type Link = { name: string; href: string; locale?: string };
@@ -22,17 +24,17 @@ export function Header({
       </a>
       <div className="topline">
         <span>{d.country}</span>
-        <a href="tel:+34663318795">{d.help} · 663 318 795 ↗</a>
+        <a href={"tel:+" + (d.settings || defaultSettings).phone}>{d.help} · {(d.settings || defaultSettings).displayPhone} ↗</a>
       </div>
       <header>
         <a
           className="brand"
           href={home}
-          aria-label={"EACC Jardines · " + d.home}
+          aria-label={(d.settings || defaultSettings).brandName + " · " + d.home}
         >
           <img
-            src="/assets/logo.png"
-            alt="EACC Jardines"
+            src={(d.settings || defaultSettings).logoUrl}
+            alt={(d.settings || defaultSettings).brandName}
             width="600"
             height="398"
           />

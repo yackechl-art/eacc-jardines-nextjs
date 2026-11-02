@@ -9,7 +9,8 @@ import {
   type MouseEvent,
 } from "react";
 import type { Dictionary, Locale } from "@/lib/i18n";
-type Photo = { src: string; caption: string };
+import { ServiceResult } from "./service-result";
+type Photo = { src: string; caption: string; serviceResult?: number };
 type SiteState = {
   service: string;
   setService: (s: string) => void;
@@ -70,7 +71,11 @@ export function SiteProvider({
         </button>
         {photo && (
           <>
-            <img id="dialog-img" src={photo.src} alt={photo.caption} />
+            {photo.serviceResult === undefined ? (
+              <img id="dialog-img" src={photo.src} alt={photo.caption} />
+            ) : (
+              <ServiceResult src={photo.src} alt={photo.caption} index={photo.serviceResult} />
+            )}
             <p>{photo.caption}</p>
           </>
         )}
@@ -84,12 +89,14 @@ export function PhotoButton({
   className,
   children,
   label,
+  serviceResult,
 }: {
   src: string;
   caption: string;
   className?: string;
   children: ReactNode;
   label?: string;
+  serviceResult?: number;
 }) {
   const { openPhoto } = useSite();
   return (
@@ -97,7 +104,7 @@ export function PhotoButton({
       type="button"
       className={className}
       aria-label={label}
-      onClick={() => openPhoto({ src, caption })}
+      onClick={() => openPhoto({ src, caption, serviceResult })}
     >
       {children}
     </button>

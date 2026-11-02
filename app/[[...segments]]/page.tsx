@@ -1,3 +1,4 @@
+import { loadContent } from "@/sanity/lib/content";
 import { notFound } from "next/navigation";
 import { allRoutes, pathFor, resolveRoute } from "@/lib/routes";
 import { metadataFor } from "@/lib/seo";
@@ -18,7 +19,7 @@ export async function generateMetadata({
   const { segments } = await params;
   const route = resolveRoute(segments);
   return route
-    ? metadataFor(route)
+    ? metadataFor(route, await loadContent(route.locale, false))
     : { title: "404 · EACC Jardines", robots: { index: false, follow: false } };
 }
 export default async function Page({
@@ -29,5 +30,5 @@ export default async function Page({
   const { segments } = await params;
   const route = resolveRoute(segments);
   if (!route) notFound();
-  return <SitePage route={route} />;
+  return <SitePage route={route} copy={await loadContent(route.locale)} />;
 }

@@ -1,4 +1,6 @@
 "use client";
+import { defaultSettings } from "@/lib/i18n";
+
 import { useEffect, useState } from "react";
 import { useSite } from "./site-provider";
 import { PHONE } from "@/lib/whatsapp";
@@ -21,7 +23,7 @@ export function FloatingContact() {
     <a
       className="floating-wa"
       hidden={hidden}
-      href={`https://wa.me/${PHONE}?text=${encodeURIComponent(d.messageHello)}`}
+      href={`https://wa.me/${(d.settings || defaultSettings).phone}?text=${encodeURIComponent(d.messageHello)}`}
       target="_blank"
       rel="noopener noreferrer"
       aria-label={d.contact + " · WhatsApp"}

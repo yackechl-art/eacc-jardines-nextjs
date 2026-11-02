@@ -1,9 +1,10 @@
-import { getContent, getDictionary, type Locale } from "@/lib/i18n";
+import { getContent, getDictionary, type Dictionary, imageSrc, type Locale } from "@/lib/i18n";
 import { pathFor } from "@/lib/routes";
 import { PhotoButton } from "./site-provider";
-export function Services({ locale }: { locale: Locale }) {
-  const d = getDictionary(locale),
-    { services } = getContent(locale);
+import { ServiceResult } from "./service-result";
+export function Services({ locale, copy }: { locale: Locale; copy?: Dictionary }) {
+  const d = copy || getDictionary(locale),
+    { services } = getContent(locale, d);
   return (
     <section className="section services" id="servicios">
       <div className="section-head">
@@ -18,11 +19,12 @@ export function Services({ locale }: { locale: Locale }) {
           <article key={s.id}>
             <PhotoButton
               className="service-photo"
-              src={"/" + s.image}
-              caption={s.alt}
+              src={imageSrc(s.image)}
+              caption={i === 0 ? s.alt : s.title}
+              serviceResult={i}
               label={d.enlarge + ": " + s.title}
             >
-              <img src={"/" + s.image} alt={s.alt} loading="lazy" />
+              <ServiceResult src={imageSrc(s.image)} alt={i === 0 ? s.alt : s.title} index={i} />
               <span className="project-open">↗</span>
             </PhotoButton>
             <div className="service-body">

@@ -1,9 +1,13 @@
+import { createDataAttribute, stegaClean } from "next-sanity";
 import {
   getContent,
   getDictionary,
   languageNames,
   locales,
   type Locale,
+  type Dictionary,
+  defaultSettings,
+  imageSrc,
 } from "@/lib/i18n";
 import { breadcrumbs, pathFor, routeText, type Route } from "@/lib/routes";
 import { structuredData } from "@/lib/seo";
@@ -17,13 +21,13 @@ import { DrainageCalculator } from "./drainage-calculator";
 import { Calculator } from "./calculator";
 import { Analytics } from "./analytics";
 
-export function Process({ locale }: { locale: Locale }) {
-  const d = getDictionary(locale);
+export function Process({ locale, copy }: { locale: Locale; copy?: Dictionary }) {
+  const d = copy || getDictionary(locale);
   return (
     <section className="section process" id="nosotros">
       <div className="section-head">
         <div>
-          <p className="eyebrow">03 / EACC JARDINES</p>
+          <p className="eyebrow">03 / {(d.settings || defaultSettings).brandName}</p>
           <h2>{d.processTitle}</h2>
         </div>
         <p>{d.processIntro}</p>
@@ -47,28 +51,28 @@ export function Process({ locale }: { locale: Locale }) {
     </section>
   );
 }
-export function Contact({ locale }: { locale: Locale }) {
-  const d = getDictionary(locale);
+export function Contact({ locale, copy }: { locale: Locale; copy?: Dictionary }) {
+  const d = copy || getDictionary(locale);
   return (
     <section className="contact section" id="contacto">
       <div className="contact-copy">
         <p className="eyebrow">04 / {d.contact}</p>
         <h2>{d.contactTitle}</h2>
         <p>{d.contactIntro}</p>
-        <a className="phone" href="tel:+34663318795">
-          663 318 795 <span>↗</span>
+        <a className="phone" href={"tel:+" + (d.settings || defaultSettings).phone}>
+          {(d.settings || defaultSettings).displayPhone} <span>↗</span>
         </a>
         <span className="phone-label">{d.whatsapp}</span>
         <div className="contact-brand">
-          EACC Jardines<span>{d.slogan}</span>
+          {(d.settings || defaultSettings).brandName}<span>{d.slogan}</span>
         </div>
       </div>
       <QuoteForm />
     </section>
   );
 }
-function ToolCards({ locale }: { locale: Locale }) {
-  const d = getDictionary(locale);
+function ToolCards({ locale, copy }: { locale: Locale; copy?: Dictionary }) {
+  const d = copy || getDictionary(locale);
   return (
     <div className="tool-grid">
       {(["area", "spacing", "drainage"] as const).map((kind) => (
@@ -84,16 +88,16 @@ function ToolCards({ locale }: { locale: Locale }) {
     </div>
   );
 }
-function Hero({ locale }: { locale: Locale }) {
-  const d = getDictionary(locale),
-    parts = d.slogan.split(" "),
+function Hero({ locale, copy }: { locale: Locale; copy?: Dictionary }) {
+  const d = copy || getDictionary(locale),
+    parts = stegaClean(d.slogan).split(" "),
     last = parts.pop();
   return (
     <>
       <section className="hero" id="inicio">
         <div className="hero-copy">
-          <p className="eyebrow">EACC JARDINES · {d.services}</p>
-          <h1>
+          <p className="eyebrow">{(d.settings || defaultSettings).brandName} · {d.services}</p>
+          <h1 data-sanity={createDataAttribute({id:`siteContent-${locale}`,type:"siteContent",path:"slogan"}).toString()}>
             {parts.join(" ")} <em>{last}</em>
           </h1>
           <p>{d.hero}</p>
@@ -113,8 +117,9 @@ function Hero({ locale }: { locale: Locale }) {
         <div className="hero-visual">
           <img
             className="hero-img"
-            src="/assets/jardin-montaje.png"
-            alt={getContent(locale).projects[0].title}
+            data-sanity={createDataAttribute({id:`siteContent-${locale}`,type:"siteContent",path:"settings.heroImage"}).toString()}
+            src={(d.settings || defaultSettings).heroImageUrl}
+            alt={getContent(locale, d).projects[0].title}
             fetchPriority="high"
           />
           <div className="photo-label">
@@ -130,13 +135,13 @@ function Hero({ locale }: { locale: Locale }) {
     </>
   );
 }
-function Breadcrumbs({ route }: { route: Route }) {
-  const items = breadcrumbs(route);
+function Breadcrumbs({ route, copy }: { route: Route; copy?: Dictionary }) {
+  const items = breadcrumbs(route, copy);
   if (items.length < 2) return null;
   return (
     <nav
       className="breadcrumbs"
-      aria-label={getDictionary(route.locale).breadcrumbs}
+      aria-label={(copy || getDictionary(route.locale)).breadcrumbs}
     >
       <ol>
         {items.map((item, i) => (
@@ -152,10 +157,10 @@ function Breadcrumbs({ route }: { route: Route }) {
     </nav>
   );
 }
-function PageIntro({ title, text }: { title: string; text: string }) {
+function PageIntro({ title, text, brandName = "EACC Jardines" }: { title: string; text: string; brandName?: string }) {
   return (
     <div className="page-intro">
-      <p className="eyebrow">EACC JARDINES</p>
+      <p className="eyebrow">{brandName}</p>
       <h1>{title}</h1>
       <p>{text}</p>
     </div>
@@ -173,10 +178,10 @@ const serviceCategory = [
   "limpieza",
   "jardines",
 ];
-function Detail({ route }: { route: Route }) {
+function Detail({ route, copy }: { route: Route; copy?: Dictionary }) {
   const { locale, kind, id = 0 } = route,
-    d = getDictionary(locale),
-    data = getContent(locale),
+    d = copy || getDictionary(locale),
+    data = getContent(locale, d),
     item = kind === "service" ? data.services[id] : data.projects[id];
   const related =
     kind === "service"
@@ -190,7 +195,7 @@ function Detail({ route }: { route: Route }) {
       <section className="section detail">
         <div className="detail-grid">
           <div>
-            <PageIntro title={item.title} text={item.description} />
+            <PageIntro brandName={(d.settings || defaultSettings).brandName} title={item.title} text={item.description} />
             <h2>{d.prepareTitle}</h2>
             <p>{d.prepareText}</p>
             <a
@@ -205,11 +210,11 @@ function Detail({ route }: { route: Route }) {
           </div>
           <PhotoButton
             className="detail-photo"
-            src={"/" + item.image}
+            src={imageSrc(item.image)}
             caption={item.title + ". " + item.description}
             label={d.enlarge}
           >
-            <img src={"/" + item.image} alt={item.alt} />
+            <img src={imageSrc(item.image)} alt={item.alt} />
             <span>{d.enlarge} ↗</span>
           </PhotoButton>
         </div>
@@ -230,7 +235,7 @@ function Detail({ route }: { route: Route }) {
             <div className="related-grid">
               {related.map((p) => (
                 <a key={p.href} href={p.href}>
-                  <img src={"/" + p.image} alt={p.alt} loading="lazy" />
+                  <img src={imageSrc(p.image)} alt={p.alt} loading="lazy" />
                   <h3>{p.title}</h3>
                   <span>{d.more} ↗</span>
                 </a>
@@ -257,15 +262,15 @@ function Detail({ route }: { route: Route }) {
           </div>
         )}
       </section>
-      <Process locale={locale} />
+      <Process locale={locale} copy={d} />
     </>
   );
 }
-export function SitePage({ route }: { route: Route }) {
+export function SitePage({ route, copy }: { route: Route; copy?: Dictionary }) {
   const { locale, kind } = route,
-    d = getDictionary(locale),
-    data = getContent(locale),
-    text = routeText(route),
+    d = copy || getDictionary(locale),
+    data = getContent(locale, d),
+    text = routeText(route, d),
     galleryProjects = data.projects.map((p, i) => ({
       ...p,
       href: pathFor(locale, "project", i),
@@ -287,18 +292,18 @@ export function SitePage({ route }: { route: Route }) {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify(structuredData(route)).replace(
+          __html: JSON.stringify(structuredData(route, stegaClean(d))).replace(
             /</g,
             "\\u003c",
           ),
         }}
       />
       <main id="contenido">
-        <Breadcrumbs route={route} />
+        <Breadcrumbs route={route} copy={d} />
         {kind === "home" && (
           <>
-            <Hero locale={locale} />
-            <Services locale={locale} />
+            <Hero locale={locale} copy={d} />
+            <Services locale={locale} copy={d} />
             <Gallery projects={galleryProjects} />
             <section className="section">
               <div className="section-head">
@@ -308,38 +313,38 @@ export function SitePage({ route }: { route: Route }) {
                 </div>
                 <p>{d.toolsIntro}</p>
               </div>
-              <ToolCards locale={locale} />
+              <ToolCards locale={locale} copy={d} />
             </section>
-            <Process locale={locale} />
-            <Contact locale={locale} />
+            <Process locale={locale} copy={d} />
+            <Contact locale={locale} copy={d} />
           </>
         )}
         {kind === "services" && (
           <>
             <section className="section compact">
-              <PageIntro title={d.services} text={d.processIntro} />
+              <PageIntro brandName={(d.settings || defaultSettings).brandName} title={d.services} text={d.processIntro} />
             </section>
-            <Services locale={locale} />
+            <Services locale={locale} copy={d} />
           </>
         )}
         {kind === "projects" && (
           <>
             <section className="section compact">
-              <PageIntro title={d.projects} text={d.national} />
+              <PageIntro brandName={(d.settings || defaultSettings).brandName} title={d.projects} text={d.national} />
             </section>
             <Gallery projects={galleryProjects} />
           </>
         )}
-        {(kind === "service" || kind === "project") && <Detail route={route} />}
+        {(kind === "service" || kind === "project") && <Detail route={route} copy={d} />}
         {kind === "tools" && (
           <section className="section">
-            <PageIntro title={d.toolsTitle} text={d.toolsIntro} />
-            <ToolCards locale={locale} />
+            <PageIntro brandName={(d.settings || defaultSettings).brandName} title={d.toolsTitle} text={d.toolsIntro} />
+            <ToolCards locale={locale} copy={d} />
           </section>
         )}
         {(kind === "area" || kind === "spacing" || kind === "drainage") && (
           <section className="section tool-page">
-            <PageIntro title={text.title} text={text.description} />
+            <PageIntro brandName={(d.settings || defaultSettings).brandName} title={text.title} text={text.description} />
             {kind === "drainage" ? <DrainageCalculator d={d} locale={locale} /> : <Calculator kind={kind} d={d} locale={locale} />}
             <a className="button" href={pathFor(locale, "contact")}>
               {d.quote} ↗
@@ -349,27 +354,27 @@ export function SitePage({ route }: { route: Route }) {
         {kind === "contact" && (
           <>
             <section className="section compact">
-              <PageIntro title={d.contact} text={d.national} />
+              <PageIntro brandName={(d.settings || defaultSettings).brandName} title={d.contact} text={d.national} />
             </section>
-            <Contact locale={locale} />
-            <Process locale={locale} />
+            <Contact locale={locale} copy={d} />
+            <Process locale={locale} copy={d} />
           </>
         )}
         {kind === "privacy" && (
           <section className="section prose">
-            <PageIntro title={d.privacy} text={d.privacyText} />
+            <PageIntro brandName={(d.settings || defaultSettings).brandName} title={d.privacy} text={d.privacyText} />
             <h2>Google Analytics</h2>
             <p>{d.analyticsText}</p>
             <h2>{d.contact}</h2>
             <p>
-              EACC Jardines · <a href="tel:+34663318795">663 318 795</a>
+              {(d.settings || defaultSettings).brandName} · <a href="tel:+34663318795">{(d.settings || defaultSettings).displayPhone}</a>
             </p>
           </section>
         )}
       </main>
       <footer>
         <div>
-          <strong>EACC Jardines</strong>
+          <strong>{(d.settings || defaultSettings).brandName}</strong>
           <p>{d.slogan}</p>
         </div>
         <div className="footer-links">
