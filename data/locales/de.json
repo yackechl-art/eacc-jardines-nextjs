@@ -221,5 +221,14 @@
   "reverseDrainage": "Gegengefälle: Wasser würde zum Einlauf fließen.",
   "drainageNote": "Die Länge ist horizontal. Höhenunterschied = Länge × Gefälle ÷ 100; Auslauf = Einlauf − Höhenunterschied. Keine Abflussbemessung oder Normprüfung.",
   "noWebGL": "3D-Vorschau nicht verfügbar. Die Berechnung funktioniert weiterhin.",
-  "drainageInvalid": "Länge von 0,01 bis 10.000 m, Höhen von −10.000 bis 10.000 m und Gefälle von −100 bis 100 % eingeben."
+  "drainageInvalid": "Länge von 0,01 bis 10.000 m, Höhen von −10.000 bis 10.000 m und Gefälle von −100 bis 100 % eingeben.",
+  "emailFormIntro": "Senden Sie Ihre Anfrage per E-Mail oder über WhatsApp.",
+  "nameLabel": "Name",
+  "emailLabel": "Ihre E-Mail-Adresse",
+  "emailSend": "Per E-Mail senden",
+  "emailSending": "Wird gesendet…",
+  "emailSuccess": "Ihre Anfrage wurde gesendet. Wir antworten per E-Mail.",
+  "emailError": "Senden fehlgeschlagen. Bitte erneut versuchen oder WhatsApp nutzen.",
+  "emailFormNote": "FormSubmit verarbeitet E-Mail-Anfragen zur Zustellung an eaccjardines@gmail.com. Alternativ können Sie WhatsApp nutzen.",
+  "emailPrivacyText": "Ihre Kontaktdaten und Anfrage werden zur Beantwortung verwendet. E-Mails werden über FormSubmit zugestellt, das Anfragen 30 Tage archiviert. Bei WhatsApp öffnet sich Ihre Nachricht dort und Sie entscheiden über den Versand. Rechner laufen im Browser. Fotos und Logo gehören EACC Jardines. Google Fonts kann beim Laden angefragt werden."
 }

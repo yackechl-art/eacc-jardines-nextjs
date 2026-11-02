@@ -221,5 +221,14 @@
   "reverseDrainage": "Pendiente inversa: el agua se movería hacia la entrada.",
   "drainageNote": "La longitud es horizontal. Desnivel = longitud × pendiente ÷ 100; salida = entrada − desnivel. No dimensiona caudales ni verifica normativa.",
   "noWebGL": "La vista 3D no está disponible. Los cálculos siguen funcionando.",
-  "drainageInvalid": "Introduce una longitud entre 0,01 y 10.000 m, cotas entre −10.000 y 10.000 m y una pendiente entre −100 y 100 %."
+  "drainageInvalid": "Introduce una longitud entre 0,01 y 10.000 m, cotas entre −10.000 y 10.000 m y una pendiente entre −100 y 100 %.",
+  "emailFormIntro": "Envíanos tu consulta por correo o continúa por WhatsApp.",
+  "nameLabel": "Nombre",
+  "emailLabel": "Tu correo electrónico",
+  "emailSend": "Enviar por correo",
+  "emailSending": "Enviando…",
+  "emailSuccess": "Tu solicitud se ha enviado. Te responderemos por correo.",
+  "emailError": "No se ha podido enviar. Inténtalo de nuevo o utiliza WhatsApp.",
+  "emailFormNote": "Al enviar por correo, FormSubmit tramita tu consulta para entregarla a eaccjardines@gmail.com. También puedes enviarla por WhatsApp.",
+  "emailPrivacyText": "Los datos de contacto y la consulta se utilizan para responder a tu solicitud. El envío por correo se tramita mediante FormSubmit, que conserva un archivo de solicitudes durante 30 días. Si eliges WhatsApp, el mensaje se abre en ese servicio y decides si lo envías. Las calculadoras funcionan en tu navegador. Las fotografías y el logo son de EACC Jardines. Las fuentes de Google Fonts pueden solicitarse al cargar la página."
 }

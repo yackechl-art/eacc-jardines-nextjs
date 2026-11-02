@@ -221,5 +221,14 @@
   "reverseDrainage": "Contre-pente : l’eau irait vers l’entrée.",
   "drainageNote": "La longueur est horizontale. Dénivelée = longueur × pente ÷ 100 ; sortie = entrée − dénivelée. Ne dimensionne pas le débit et ne vérifie pas les normes.",
   "noWebGL": "Aperçu 3D indisponible. Les calculs restent disponibles.",
-  "drainageInvalid": "Saisissez une longueur de 0,01 à 10 000 m, des cotes de −10 000 à 10 000 m et une pente de −100 à 100 %."
+  "drainageInvalid": "Saisissez une longueur de 0,01 à 10 000 m, des cotes de −10 000 à 10 000 m et une pente de −100 à 100 %.",
+  "emailFormIntro": "Envoyez votre demande par e-mail ou continuez sur WhatsApp.",
+  "nameLabel": "Nom",
+  "emailLabel": "Votre adresse e-mail",
+  "emailSend": "Envoyer par e-mail",
+  "emailSending": "Envoi…",
+  "emailSuccess": "Votre demande a été envoyée. Nous répondrons par e-mail.",
+  "emailError": "Échec de l’envoi. Réessayez ou utilisez WhatsApp.",
+  "emailFormNote": "FormSubmit traite les demandes par e-mail pour les envoyer à eaccjardines@gmail.com. Vous pouvez aussi utiliser WhatsApp.",
+  "emailPrivacyText": "Vos coordonnées et votre demande servent à vous répondre. Les e-mails passent par FormSubmit, qui conserve une archive pendant 30 jours. Avec WhatsApp, le message s’ouvre dans ce service et vous décidez de l’envoyer. Les calculateurs fonctionnent dans votre navigateur. Les photos et le logo appartiennent à EACC Jardines. Google Fonts peut être sollicité au chargement."
 }

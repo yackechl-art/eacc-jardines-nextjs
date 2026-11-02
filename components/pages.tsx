@@ -362,7 +362,7 @@ export function SitePage({ route, copy }: { route: Route; copy?: Dictionary }) {
         )}
         {kind === "privacy" && (
           <section className="section prose">
-            <PageIntro brandName={(d.settings || defaultSettings).brandName} title={d.privacy} text={d.privacyText} />
+            <PageIntro brandName={(d.settings || defaultSettings).brandName} title={d.privacy} text={d.emailPrivacyText} />
             <h2>Google Analytics</h2>
             <p>{d.analyticsText}</p>
             <h2>{d.contact}</h2>
