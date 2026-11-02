@@ -1,7 +1,5 @@
-import { getContent, getDictionary, type Dictionary, imageSrc, type Locale } from "@/lib/i18n";
+import { getContent, getDictionary, type Dictionary, type Locale } from "@/lib/i18n";
 import { pathFor } from "@/lib/routes";
-import { PhotoButton } from "./site-provider";
-import { ServiceResult } from "./service-result";
 export function Services({ locale, copy }: { locale: Locale; copy?: Dictionary }) {
   const d = copy || getDictionary(locale),
     { services } = getContent(locale, d);
@@ -14,19 +12,9 @@ export function Services({ locale, copy }: { locale: Locale; copy?: Dictionary }
         </div>
         <p>{d.servicesIntro}</p>
       </div>
-      <div className="service-grid">
+      <div className="service-grid service-list" role="list">
         {services.map((s, i) => (
-          <article key={s.id}>
-            <PhotoButton
-              className="service-photo"
-              src={imageSrc(s.image)}
-              caption={i === 0 ? s.alt : s.title}
-              serviceResult={i}
-              label={d.enlarge + ": " + s.title}
-            >
-              <ServiceResult src={imageSrc(s.image)} alt={i === 0 ? s.alt : s.title} index={i} />
-              <span className="project-open">↗</span>
-            </PhotoButton>
+          <article key={s.id} role="listitem">
             <div className="service-body">
               <span className="service-num">
                 {String(i + 1).padStart(2, "0")}

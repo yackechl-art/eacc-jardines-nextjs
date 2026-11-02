@@ -193,7 +193,7 @@ function Detail({ route, copy }: { route: Route; copy?: Dictionary }) {
   return (
     <>
       <section className="section detail">
-        <div className="detail-grid">
+        <div className={kind === "service" ? "detail-grid service-detail-text" : "detail-grid"}>
           <div>
             <PageIntro brandName={(d.settings || defaultSettings).brandName} title={item.title} text={item.description} />
             <h2>{d.prepareTitle}</h2>
@@ -208,7 +208,7 @@ function Detail({ route, copy }: { route: Route; copy?: Dictionary }) {
               {d.quote} ↗
             </a>
           </div>
-          <PhotoButton
+          {kind === "project" && <PhotoButton
             className="detail-photo"
             src={imageSrc(item.image)}
             caption={item.title + ". " + item.description}
@@ -216,7 +216,7 @@ function Detail({ route, copy }: { route: Route; copy?: Dictionary }) {
           >
             <img src={imageSrc(item.image)} alt={item.alt} />
             <span>{d.enlarge} ↗</span>
-          </PhotoButton>
+          </PhotoButton>}
         </div>
         <div className="detail-information">
           <h2>{d.faqTitle}</h2>
@@ -235,7 +235,6 @@ function Detail({ route, copy }: { route: Route; copy?: Dictionary }) {
             <div className="related-grid">
               {related.map((p) => (
                 <a key={p.href} href={p.href}>
-                  <img src={imageSrc(p.image)} alt={p.alt} loading="lazy" />
                   <h3>{p.title}</h3>
                   <span>{d.more} ↗</span>
                 </a>
