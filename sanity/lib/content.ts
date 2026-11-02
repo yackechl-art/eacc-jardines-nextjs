@@ -7,7 +7,7 @@ import { sanityConfigured } from './client';
 import { getDictionary, defaultSettings, type Dictionary, type Locale } from '@/lib/i18n';
 export const CONTENT_QUERY = defineQuery(`*[_type == "siteContent" && _id == "siteContent-" + $locale][0]{
   ...,
-  settings{..., "logoUrl":coalesce(logo.asset->url, logoUrl), "heroImageUrl":coalesce(heroImage.asset->url, heroImageUrl)},
+  settings{..., "photoLogoUrl":coalesce(photoLogo.asset->url, photoLogoUrl), "logoUrl":coalesce(logo.asset->url, logoUrl), "heroImageUrl":coalesce(heroImage.asset->url, heroImageUrl)},
   serviceItems[]{..., "imageUrl":coalesce(image.asset->url, imageUrl)},
   projectItems[]{..., "imageUrl":coalesce(image.asset->url, imageUrl)}
 }`);
