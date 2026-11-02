@@ -6,7 +6,7 @@ import pt from "../data/locales/pt.json";
 import source from "../data/content.json";
 export const locales = ["es", "en", "fr", "de", "pt"] as const;
 export type Locale = (typeof locales)[number];
-export type SiteSettings = { brandName: string; phone: string; displayPhone: string; logoUrl: string; heroImageUrl: string };
+export type SiteSettings = { brandName: string; phone: string; displayPhone: string; logoUrl: string; photoLogoUrl?: string; heroImageUrl: string };
 export const defaultSettings: SiteSettings = { brandName: "EACC Jardines", phone: "34663318795", displayPhone: "663 318 795", logoUrl: "/assets/logo.png", heroImageUrl: "/assets/jardin-montaje.png" };
 export type Dictionary = Omit<typeof es, "serviceItems" | "projectItems"> & { settings?: SiteSettings; serviceItems: { title: string; description: string; alt?: string; imageUrl?: string; logoIncluded?: boolean }[]; projectItems: { title: string; description: string; alt?: string; imageUrl?: string; categories?: string[] }[] };
 export function imageSrc(image: string) { return /^(https?:\/\/|\/)/.test(image) ? image : "/" + image; }

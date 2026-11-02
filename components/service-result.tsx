@@ -11,8 +11,8 @@ export function ServiceResult({ src, alt, index }: { src: string; alt: string; i
       <img src={src} alt={alt} loading="lazy"
         style={{ display: "block", width: "100%", height: "auto", maxHeight: "75vh", objectFit: "contain" }} />
       {!(d.serviceItems[index]?.logoIncluded ?? (index === 3)) && (
-        <img src={settings.logoUrl} alt="" aria-hidden="true"
-          style={{ position: "absolute", top: "12px", right: "12px", width: "23%", height: "auto", padding: "4px", background: "white", borderRadius: "3px" }} />
+        <img src={settings.photoLogoUrl || "/assets/logo-transparent.png"} alt="" aria-hidden="true"
+          style={{ position: "absolute", top: "12px", right: "12px", width: "23%", height: "auto" }} />
       )}
     </span>
   );

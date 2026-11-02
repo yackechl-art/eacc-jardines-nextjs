@@ -24,6 +24,8 @@ export const schemaTypes = [item(false),item(true),defineType({name:'siteContent
     defineField({name:'phone',title:'Teléfono con prefijo de país, solo dígitos',type:'string',validation:r=>r.required().regex(/^\d{7,15}$/)}),
     defineField({name:'displayPhone',title:'Teléfono visible',type:'string',validation:r=>r.required()}),
     defineField({name:'logo',title:'Logo común para todas las fotografías',type:'image'}),
+    defineField({name:'photoLogo',title:'Logo transparente sobre las fotografías',type:'image'}),
+    defineField({name:'photoLogoUrl',type:'string',hidden:true}),
     defineField({name:'heroImage',title:'Foto de portada',type:'image',options:{hotspot:true}}),
     defineField({name:'logoUrl',type:'string',hidden:true}),defineField({name:'heroImageUrl',type:'string',hidden:true}),
   ]}),
