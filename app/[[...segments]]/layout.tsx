@@ -1,3 +1,5 @@
+import { Suspense } from "react";
+import { CmsPreview } from "@/components/cms-preview";
 import "../globals.css";
 import { localeFromSegments } from "@/lib/routes";
 export default async function RootLayout({
@@ -10,7 +12,7 @@ export default async function RootLayout({
   const { segments } = await params;
   return (
     <html lang={localeFromSegments(segments)}>
-      <body>{children}</body>
+      <body>{children}<Suspense><CmsPreview /></Suspense></body>
     </html>
   );
 }

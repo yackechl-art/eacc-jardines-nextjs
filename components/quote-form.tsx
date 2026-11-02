@@ -1,6 +1,7 @@
 "use client";
 import { useEffect, useState, type FormEvent } from "react";
 import { useSite } from "./site-provider";
+import { stegaClean } from "next-sanity";
 import { buildWhatsAppUrl } from "@/lib/whatsapp";
 export function QuoteForm() {
   const { service, setService, d } = useSite(),
@@ -8,7 +9,7 @@ export function QuoteForm() {
   useEffect(() => {
     const id = new URL(window.location.href).searchParams.get("service");
     if (id !== null && /^\d+$/.test(id) && d.serviceItems[Number(id)])
-      setService(d.serviceItems[Number(id)].title);
+      setService(stegaClean(d.serviceItems[Number(id)].title));
   }, [d, setService]);
   function submit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
@@ -18,7 +19,7 @@ export function QuoteForm() {
         service,
         String(form.get("place") || ""),
         String(form.get("details") || ""),
-        d,
+        stegaClean(d),
       );
       setError("");
       window.open(url, "_blank", "noopener,noreferrer");
@@ -40,7 +41,7 @@ export function QuoteForm() {
       >
         <option value="">{d.servicePlaceholder}</option>
         {d.serviceItems.map((s) => (
-          <option key={s.title}>{s.title}</option>
+          <option key={stegaClean(s.title)} value={stegaClean(s.title)}>{s.title}</option>
         ))}
       </select>
       <label htmlFor="place">{d.placeLabel}</label>

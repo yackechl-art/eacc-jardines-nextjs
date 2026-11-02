@@ -7,6 +7,7 @@ type Labels = {
   messagePlace: string;
   messageDetails: string;
   formError: string;
+  settings?: { phone: string };
 };
 export function buildWhatsAppUrl(
   service: string,
@@ -20,5 +21,5 @@ export function buildWhatsAppUrl(
         "Selecciona un servicio e indica la localidad y provincia.",
     );
   const message = `${labels?.messageHello || "Hola, EACC Jardines. Me gustaría pedir un presupuesto sin compromiso."}\n\n${labels?.messageService || "Servicio"}: ${service.trim()}\n${labels?.messagePlace || "Localidad"}: ${place.trim()}${details.trim() ? "\n" + (labels?.messageDetails || "Detalles") + ": " + details.trim() : ""}`;
-  return `https://wa.me/${PHONE}?text=${encodeURIComponent(message)}`;
+  return `https://wa.me/${labels?.settings?.phone || PHONE}?text=${encodeURIComponent(message)}`;
 }

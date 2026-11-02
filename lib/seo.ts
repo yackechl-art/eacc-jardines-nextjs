@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { locales, getDictionary, getContent } from "./i18n";
+import { locales, getDictionary, getContent, type Dictionary, defaultSettings, imageSrc } from "./i18n";
 import { pathFor, routeText, breadcrumbs, type Route } from "./routes";
 const configured =
   process.env.NEXT_PUBLIC_SITE_URL || "https://www.eaccjardines.com";
@@ -9,12 +9,12 @@ export const INDEXABLE =
 export function absolute(path: string) {
   return new URL(path, SITE_URL).toString();
 }
-export function metadataFor(r: Route): Metadata {
-  const { title, description } = routeText(r),
+export function metadataFor(r: Route, copy?: Dictionary): Metadata {
+  const { title, description } = routeText(r, copy),
     path = pathFor(r.locale, r.kind, r.id);
   return {
     metadataBase: new URL(SITE_URL),
-    title: `${title} | EACC Jardines`,
+    title: `${title} | ${(copy?.settings || defaultSettings).brandName}`,
     description,
     alternates: {
       canonical: path,
@@ -31,7 +31,7 @@ export function metadataFor(r: Route): Metadata {
       title,
       description,
       url: absolute(path),
-      siteName: "EACC Jardines",
+      siteName: (copy?.settings || defaultSettings).brandName,
       locale: {
         es: "es_ES",
         en: "en_GB",
@@ -51,32 +51,32 @@ export function metadataFor(r: Route): Metadata {
               pt: "pt_PT",
             })[l],
         ),
-      images: [{ url: absolute("/assets/jardin-montaje.png"), alt: title }],
+      images: [{ url: absolute((copy?.settings || defaultSettings).heroImageUrl), alt: title }],
     },
     twitter: {
       card: "summary_large_image",
       title,
       description,
-      images: [absolute("/assets/jardin-montaje.png")],
+      images: [absolute((copy?.settings || defaultSettings).heroImageUrl)],
     },
     icons: { icon: "/assets/logo.png" },
   };
 }
-export function structuredData(r: Route) {
-  const d = getDictionary(r.locale),
-    { title, description } = routeText(r),
+export function structuredData(r: Route, copy?: Dictionary) {
+  const d = copy || getDictionary(r.locale),
+    { title, description } = routeText(r, copy),
     url = absolute(pathFor(r.locale, r.kind, r.id));
   const organization = {
     "@type": "Organization",
     "@id": absolute("/#organization"),
-    name: "EACC Jardines",
+    name: (copy?.settings || defaultSettings).brandName,
     url: SITE_URL,
-    logo: { "@type": "ImageObject", url: absolute("/assets/logo.png") },
-    telephone: "+34663318795",
+    logo: { "@type": "ImageObject", url: absolute((copy?.settings || defaultSettings).logoUrl) },
+    telephone: "+" + (copy?.settings || defaultSettings).phone,
     areaServed: { "@type": "Country", name: "Spain" },
     contactPoint: {
       "@type": "ContactPoint",
-      telephone: "+34663318795",
+      telephone: "+" + (copy?.settings || defaultSettings).phone,
       contactType: "customer service",
       areaServed: "ES",
     },
@@ -87,7 +87,7 @@ export function structuredData(r: Route) {
       "@type": "WebSite",
       "@id": absolute("/#website"),
       url: SITE_URL,
-      name: "EACC Jardines",
+      name: (copy?.settings || defaultSettings).brandName,
       publisher: { "@id": organization["@id"] },
       inLanguage: locales,
     },
@@ -108,7 +108,7 @@ export function structuredData(r: Route) {
   if (r.kind !== "home")
     graph.push({
       "@type": "BreadcrumbList",
-      itemListElement: breadcrumbs(r).map((item, i) => ({
+      itemListElement: breadcrumbs(r, copy).map((item, i) => ({
         "@type": "ListItem",
         position: i + 1,
         name: item.name,
@@ -119,7 +119,7 @@ export function structuredData(r: Route) {
     graph.push({
       "@type": "OfferCatalog",
       name: d.services,
-      itemListElement: getContent(r.locale).services.map((item, i) => ({
+      itemListElement: getContent(r.locale, copy).services.map((item, i) => ({
         "@type": "Offer",
         itemOffered: {
           "@type": "Service",
@@ -143,10 +143,10 @@ export function structuredData(r: Route) {
       areaServed: { "@type": "Country", name: "Spain" },
     });
   if (r.kind === "project") {
-    const p = getContent(r.locale).projects[r.id ?? 0];
+    const p = getContent(r.locale, copy).projects[r.id ?? 0];
     graph.push({
       "@type": "ImageObject",
-      contentUrl: absolute("/" + p.image),
+      contentUrl: absolute(imageSrc(p.image)),
       caption: title,
       description,
       creator: { "@id": organization["@id"] },
@@ -156,7 +156,7 @@ export function structuredData(r: Route) {
   if (r.kind === "projects")
     graph.push({
       "@type": "ItemList",
-      itemListElement: getContent(r.locale).projects.map((item, i) => ({
+      itemListElement: getContent(r.locale, copy).projects.map((item, i) => ({
         "@type": "ListItem",
         position: i + 1,
         name: item.title,

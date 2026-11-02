@@ -5,6 +5,7 @@ import {
   locales,
   slugify,
   type Locale,
+  type Dictionary,
 } from "./i18n";
 export type PageKind =
   | "home"
@@ -78,9 +79,9 @@ export function resolveRoute(segments?: string[]) {
 export function localeFromSegments(segments?: string[]): Locale {
   return segments?.[0] && isLocale(segments[0]) ? segments[0] : "es";
 }
-export function routeText(r: Route) {
-  const d = getDictionary(r.locale),
-    data = getContent(r.locale);
+export function routeText(r: Route, copy?: Dictionary) {
+  const d = copy || getDictionary(r.locale),
+    data = getContent(r.locale, d);
   return {
     title: {
       home: d.slogan,
@@ -110,8 +111,8 @@ export function routeText(r: Route) {
     }[r.kind],
   };
 }
-export function breadcrumbs(r: Route) {
-  const d = getDictionary(r.locale),
+export function breadcrumbs(r: Route, copy?: Dictionary) {
+  const d = copy || getDictionary(r.locale),
     items = [{ name: d.home, path: pathFor(r.locale) }];
   if (r.kind === "home") return items;
   if (r.kind === "service")
@@ -121,7 +122,7 @@ export function breadcrumbs(r: Route) {
   if (r.kind === "area" || r.kind === "spacing" || r.kind === "drainage")
     items.push({ name: d.tools, path: pathFor(r.locale, "tools") });
   items.push({
-    name: routeText(r).title,
+    name: routeText(r, d).title,
     path: pathFor(r.locale, r.kind, r.id),
   });
   return items;

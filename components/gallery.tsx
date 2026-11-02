@@ -1,4 +1,6 @@
 "use client";
+import { imageSrc } from "@/lib/i18n";
+
 import { useState } from "react";
 import { useSite, PhotoButton } from "./site-provider";
 type Project = {
@@ -52,11 +54,11 @@ export function Gallery({ projects }: { projects: Project[] }) {
           <article className="project" key={p.href}>
             <PhotoButton
               className="project-photo"
-              src={"/" + p.image}
+              src={imageSrc(p.image)}
               caption={p.title + ". " + p.description}
               label={d.enlarge + ": " + p.title}
             >
-              <img src={"/" + p.image} alt={p.alt} loading="lazy" />
+              <img src={imageSrc(p.image)} alt={p.alt} loading="lazy" />
               <span className="project-open">↗</span>
             </PhotoButton>
             <div className="project-meta">
