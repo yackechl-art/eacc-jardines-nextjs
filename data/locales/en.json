@@ -221,5 +221,14 @@
   "reverseDrainage": "Reverse slope: water would move towards the inlet.",
   "drainageNote": "Length is horizontal. Drop = length × slope ÷ 100; outlet = inlet − drop. Does not size flow or check regulations.",
   "noWebGL": "3D preview unavailable. Calculations still work.",
-  "drainageInvalid": "Enter a length from 0.01 to 10,000 m, elevations from −10,000 to 10,000 m and a slope from −100 to 100%."
+  "drainageInvalid": "Enter a length from 0.01 to 10,000 m, elevations from −10,000 to 10,000 m and a slope from −100 to 100%.",
+  "emailFormIntro": "Send your enquiry by email or continue on WhatsApp.",
+  "nameLabel": "Name",
+  "emailLabel": "Your email address",
+  "emailSend": "Send by email",
+  "emailSending": "Sending…",
+  "emailSuccess": "Your enquiry has been sent. We will reply by email.",
+  "emailError": "Unable to send. Try again or use WhatsApp.",
+  "emailFormNote": "FormSubmit processes email enquiries for delivery to eaccjardines@gmail.com. You can also use WhatsApp.",
+  "emailPrivacyText": "Your contact details and enquiry are used to respond to your request. Email delivery uses FormSubmit, which retains an archive for 30 days. If you choose WhatsApp, your message opens in that service and you decide whether to send it. Calculators run in your browser. Photos and logo belong to EACC Jardines. Google Fonts may be requested when the page loads."
 }
