@@ -118,8 +118,8 @@
   ],
   "serviceItems": [
     {
-      "title": "Natural and artificial lawn installation",
-      "description": "Natural grass seeding, turf laying and artificial lawn installation. We prepare the surface and adapt the solution to the use and characteristics of each space.",
+      "title": "Natural lawn seeding and turf laying",
+      "description": "We sow natural lawns and lay turf to create green spaces. We prepare and level the ground and adapt irrigation and initial care to each site.",
       "alt": "Newly laid natural turf rolls beside a building and a wall"
     },
     {
@@ -158,6 +158,10 @@
     {
       "title": "Other work and advice",
       "description": "Need gardening or green space work that is not listed here? Tell us your idea and we will assess how we can help."
+    },
+    {
+      "title": "Artificial grass installation",
+      "description": "We install artificial grass in gardens, patios and outdoor areas. We prepare and level the base, provide drainage and carefully cut, join and secure the grass for an even finish."
     }
   ],
   "projectItems": [

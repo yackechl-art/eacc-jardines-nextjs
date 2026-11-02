@@ -11,7 +11,7 @@ test('CMS overrides reach visible content and metadata while canonical URLs stay
  const route={locale:'es',kind:'service',id:0};
  assert.equal(routeText(route,copy).title,copy.serviceItems[0].title);
  assert.match(metadataFor(route,copy).title,/Tepe editado/);
- assert.equal(pathFor('es','service',0),'/servicios/instalacion-de-cesped-natural-y-artificial');
+ assert.equal(pathFor('es','service',0),'/servicios/instalacion-de-cesped-natural-y-en-tepe');
  assert.notEqual(getContent('es').services[0].title,copy.serviceItems[0].title);
 });
 test('CMS contact number controls WhatsApp messages',async()=>{

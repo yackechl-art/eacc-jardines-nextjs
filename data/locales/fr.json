@@ -118,8 +118,8 @@
   ],
   "serviceItems": [
     {
-      "title": "Installation de gazon naturel et synthétique",
-      "description": "Semis de gazon naturel, pose de gazon en rouleaux et installation de gazon synthétique. Nous préparons la surface et adaptons la solution à l’usage et aux caractéristiques du lieu.",
+      "title": "Semis de gazon naturel et pose de gazon en rouleaux",
+      "description": "Nous semons du gazon naturel et posons du gazon en rouleaux. Nous préparons et nivelons le sol et adaptons l’arrosage et les premiers soins à chaque espace.",
       "alt": "Gazon naturel fraîchement posé en rouleaux le long d’un bâtiment et d’un mur"
     },
     {
@@ -158,6 +158,10 @@
     {
       "title": "Autres travaux et conseils",
       "description": "Vous avez besoin de travaux de jardinage ou d’aménagement non présentés ici ? Décrivez votre idée : nous étudierons comment vous aider."
+    },
+    {
+      "title": "Installation de gazon synthétique",
+      "description": "Nous installons du gazon synthétique dans les jardins, patios et espaces extérieurs. Nous préparons la base, assurons le drainage et réalisons les découpes, raccords et fixations pour une finition uniforme."
     }
   ],
   "projectItems": [

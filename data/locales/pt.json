@@ -118,8 +118,8 @@
   ],
   "serviceItems": [
     {
-      "title": "Instalação de relva natural e artificial",
-      "description": "Sementeira de relva natural, colocação de tapetes de relva e instalação de relva artificial. Preparamos a superfície e adaptamos a solução ao uso e às características do espaço.",
+      "title": "Sementeira de relva natural e colocação de tapetes de relva",
+      "description": "Semeamos relva natural e colocamos tapetes de relva. Preparamos e nivelamos o terreno e adaptamos a rega e os cuidados iniciais a cada espaço.",
       "alt": "Relva natural em tapetes recém-colocada junto a um edifício e a um muro"
     },
     {
@@ -158,6 +158,10 @@
     {
       "title": "Outros trabalhos e aconselhamento",
       "description": "Precisa de um trabalho de jardinagem ou acondicionamento que não aparece aqui? Conte-nos a sua ideia e estudaremos como ajudar."
+    },
+    {
+      "title": "Instalação de relva artificial",
+      "description": "Instalamos relva artificial em jardins, pátios e espaços exteriores. Preparamos e nivelamos a base, asseguramos a drenagem e realizamos os cortes, uniões e fixação para um acabamento uniforme."
     }
   ],
   "projectItems": [

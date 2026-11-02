@@ -177,6 +177,7 @@ const serviceCategory = [
   "plantaciones",
   "limpieza",
   "jardines",
+  "cesped",
 ];
 function Detail({ route, copy }: { route: Route; copy?: Dictionary }) {
   const { locale, kind, id = 0 } = route,
