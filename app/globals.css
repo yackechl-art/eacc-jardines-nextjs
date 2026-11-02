@@ -1944,3 +1944,18 @@ dialog p {
 .drainage-controls .button { margin: 0; cursor: pointer; }
 .drainage-preview { height: 380px; width: 100%; overflow: hidden; border-radius: 8px; background: #f0f2e9; }
 @media (max-width: 760px) { .drainage-preview { height: 280px; } }
+
+/* Service descriptions form a readable list; project photography lives in Projects. */
+.service-grid.service-list { grid-template-columns: 1fr; gap: 0; border-top: 1px solid var(--line); }
+.service-grid.service-list article { padding: 0; border: 0; border-bottom: 1px solid var(--line); border-radius: 0; background: transparent; }
+.service-list .service-body { display: grid; grid-template-columns: 40px minmax(220px, 0.9fr) minmax(260px, 1.2fr) auto; gap: 24px; align-items: start; padding: 30px 0; }
+.service-list .service-num { margin: 4px 0 0; }
+.service-list h3, .service-list p { margin: 0; }
+.service-list p { font-size: 14px; }
+.service-list .service-body > a { margin: 0; padding: 5px 0; border: 0; white-space: nowrap; }
+.detail-grid.service-detail-text { grid-template-columns: minmax(0, 820px); }
+@media (max-width: 900px) {
+  .service-list .service-body { grid-template-columns: 30px minmax(0, 1fr); gap: 12px 18px; padding: 24px 0; }
+  .service-list .service-num { grid-row: 1 / 4; }
+  .service-list h3, .service-list p, .service-list .service-body > a { grid-column: 2; }
+}
