@@ -13,22 +13,22 @@ export function Services({ locale, copy }: { locale: Locale; copy?: Dictionary }
         <p>{d.servicesIntro}</p>
       </div>
       <div className="service-grid service-list" role="list">
-        {services.map((s, i) => (
+        {[services[0], services[10], ...services.slice(1, 10)].map((s, position) => (
           <article key={s.id} role="listitem">
             <div className="service-body">
               <span className="service-num">
-                {String(i + 1).padStart(2, "0")}
+                {String(position + 1).padStart(2, "0")}
               </span>
               <h3>
                 <a
                   className="heading-link"
-                  href={pathFor(locale, "service", i)}
+                  href={pathFor(locale, "service", Number(s.id))}
                 >
                   {s.title}
                 </a>
               </h3>
               <p>{s.description}</p>
-              <a href={pathFor(locale, "service", i)}>
+              <a href={pathFor(locale, "service", Number(s.id))}>
                 {d.more} <span>↗</span>
               </a>
             </div>

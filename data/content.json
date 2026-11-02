@@ -1,8 +1,8 @@
 {
   "services": [
     {
-      "title": "Instalación de césped natural y artificial",
-      "description": "Siembra de césped natural, colocación de tepe e instalación de césped artificial. Preparamos la superficie y adaptamos la solución al uso y las características de cada espacio.",
+      "title": "Instalación de césped natural y en tepe",
+      "description": "Sembramos césped natural y colocamos tepes para crear una superficie verde. Preparamos y nivelamos el terreno y adaptamos el riego y los cuidados iniciales a cada espacio.",
       "image": "assets/cesped-artificial-montaje.png",
       "alt": "Montaje de la preparación del terreno y el césped artificial instalado junto a una piscina"
     },
@@ -59,6 +59,12 @@
       "description": "¿Necesitas un trabajo de jardinería o acondicionamiento que no aparece aquí? Cuéntanos tu idea y estudiaremos cómo ayudarte.",
       "image": "assets/otros-servicio.png",
       "alt": "Selección de trabajos reales de jardinería y acondicionamiento de EACC Jardines"
+    },
+    {
+      "title": "Instalación de césped artificial",
+      "description": "Instalamos césped artificial en jardines, patios y zonas de uso exterior. Preparamos y nivelamos la base, cuidamos el drenaje y realizamos los cortes, las uniones y la fijación para conseguir un acabado uniforme.",
+      "image": "assets/cesped-artificial-montaje.png",
+      "alt": "Césped artificial instalado junto a una piscina"
     }
   ],
   "projects": [

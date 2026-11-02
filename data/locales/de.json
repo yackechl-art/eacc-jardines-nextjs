@@ -118,8 +118,8 @@
   ],
   "serviceItems": [
     {
-      "title": "Natur- und Kunstrasen anlegen",
-      "description": "Aussaat von Naturrasen, Verlegen von Rollrasen und Kunstrasen. Wir bereiten den Untergrund vor und passen die Lösung an Nutzung und Fläche an.",
+      "title": "Naturrasen säen und Rollrasen verlegen",
+      "description": "Wir säen Naturrasen und verlegen Rollrasen. Wir bereiten den Boden vor, ebnen ihn und passen Bewässerung und erste Pflege an den Standort an.",
       "alt": "Frisch verlegter Rollrasen neben einem Gebäude und einer Mauer"
     },
     {
@@ -158,6 +158,10 @@
     {
       "title": "Weitere Arbeiten und Beratung",
       "description": "Sie benötigen Gartenbau- oder Grünflächenarbeiten, die hier nicht aufgeführt sind? Beschreiben Sie Ihre Idee, damit wir die Möglichkeiten prüfen können."
+    },
+    {
+      "title": "Kunstrasen verlegen",
+      "description": "Wir verlegen Kunstrasen in Gärten, Innenhöfen und Außenbereichen. Wir bereiten den Untergrund und die Entwässerung vor und sorgen für saubere Zuschnitte, Verbindungen und Befestigungen."
     }
   ],
   "projectItems": [

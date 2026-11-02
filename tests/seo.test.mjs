@@ -39,7 +39,7 @@ test("translations have complete UI keys, services and projects", () => {
   const keys = Object.keys(getDictionary("es")).sort();
   for (const l of locales) {
     assert.deepEqual(Object.keys(getDictionary(l)).sort(), keys);
-    assert.equal(getContent(l).services.length, 10);
+    assert.equal(getContent(l).services.length, 11);
     assert.equal(getContent(l).projects.length, 8);
     assert.ok(getDictionary(l).hero);
   }
