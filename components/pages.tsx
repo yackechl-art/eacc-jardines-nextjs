@@ -1,3 +1,4 @@
+import { PageTransition } from "./page-transition";
 import { createDataAttribute, stegaClean } from "next-sanity";
 import {
   getContent,
@@ -318,7 +319,7 @@ export function SitePage({ route, copy }: { route: Route; copy?: Dictionary }) {
           ),
         }}
       />
-      <main id="contenido">
+      <PageTransition>
         <Breadcrumbs route={route} copy={d} />
         {kind === "home" && (
           <>
@@ -391,7 +392,7 @@ export function SitePage({ route, copy }: { route: Route; copy?: Dictionary }) {
             </p>
           </section>
         )}
-      </main>
+      </PageTransition>
       <footer>
         <div>
           <strong>{(d.settings || defaultSettings).brandName}</strong>
