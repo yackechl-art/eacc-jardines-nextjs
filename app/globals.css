@@ -1995,3 +1995,21 @@ dialog p {
 .project-steps h3 {
   margin: .7rem 0 .3rem;
 }
+
+/* Fill project frames while preserving the full image in the photo viewer. */
+.project-photo img,
+.detail-photo img,
+.project-steps img {
+  object-fit: cover;
+}
+
+.project-photo,
+.detail-photo {
+  padding: 0;
+  overflow: hidden;
+}
+
+.detail-photo img,
+.project-steps img {
+  aspect-ratio: 4 / 3;
+}
