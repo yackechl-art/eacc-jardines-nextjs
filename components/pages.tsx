@@ -219,6 +219,26 @@ function Detail({ route, copy }: { route: Route; copy?: Dictionary }) {
             <span>{d.enlarge} ↗</span>
           </PhotoButton>}
         </div>
+        {kind === "project" && (
+          <section className="project-story" aria-labelledby="project-story-title">
+            <h2 id="project-story-title">{({ es: "El trabajo, paso a paso", en: "The project, step by step", fr: "Le projet, étape par étape", de: "Das Projekt Schritt für Schritt", pt: "O projeto, passo a passo" })[locale]}</h2>
+            <ol className="project-steps">
+              {data.projects[id].photos.map((photo) => (
+                <li key={photo.image}>
+                  <figure>
+                    <PhotoButton src={imageSrc(photo.image)} caption={photo.caption} label={d.enlarge + ": " + photo.caption}>
+                      <img src={imageSrc(photo.image)} alt={photo.caption} loading="lazy" decoding="async" />
+                    </PhotoButton>
+                    <figcaption>
+                      <h3>{photo.caption}</h3>
+                      {photo.description && <p>{photo.description}</p>}
+                    </figcaption>
+                  </figure>
+                </li>
+              ))}
+            </ol>
+          </section>
+        )}
         <div className="detail-information">
           <h2>{d.faqTitle}</h2>
           <details open>

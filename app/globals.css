@@ -1959,3 +1959,39 @@ dialog p {
   .service-list .service-num { grid-row: 1 / 4; }
   .service-list h3, .service-list p, .service-list .service-body > a { grid-column: 2; }
 }
+
+.project-story {
+  margin-block: 3rem;
+}
+
+.project-steps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 23rem), 1fr));
+  gap: 1.5rem;
+  list-style-position: inside;
+  padding: 0;
+}
+
+.project-steps figure {
+  margin: .5rem 0 0;
+}
+
+.project-steps button {
+  display: block;
+  width: 100%;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  cursor: zoom-in;
+}
+
+.project-steps img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: .75rem;
+}
+
+.project-steps h3 {
+  margin: .7rem 0 .3rem;
+}

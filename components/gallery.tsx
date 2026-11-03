@@ -2,7 +2,7 @@
 import { imageSrc } from "@/lib/i18n";
 
 import { useState } from "react";
-import { useSite, PhotoButton } from "./site-provider";
+import { useSite } from "./site-provider";
 type Project = {
   title: string;
   alt: string;
@@ -52,15 +52,10 @@ export function Gallery({ projects }: { projects: Project[] }) {
       <div className="project-grid">
         {shown.map((p) => (
           <article className="project" key={p.href}>
-            <PhotoButton
-              className="project-photo"
-              src={imageSrc(p.image)}
-              caption={p.title + ". " + p.description}
-              label={d.enlarge + ": " + p.title}
-            >
+            <a className="project-photo" href={p.href} aria-label={p.title}>
               <img src={imageSrc(p.image)} alt={p.alt} loading="lazy" />
-              <span className="project-open">↗</span>
-            </PhotoButton>
+              <span className="project-open" aria-hidden="true">↗</span>
+            </a>
             <div className="project-meta">
               <span className="project-tag">{p.tag}</span>
               <h3>

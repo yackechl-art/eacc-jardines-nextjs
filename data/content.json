@@ -71,104 +71,354 @@
     {
       "title": "De terreno a jardín con césped en tepe",
       "description": "Tendimos las conducciones de riego en zanjas y nivelamos la tierra junto a la vivienda y la piscina. Colocamos el césped natural en tepes ajustados a la tarima y plantamos palmeras y trepadoras en el parterre. El montaje termina con el riego final de la plantación.",
-      "image": "assets/proyecto-01.jpg",
+      "image": "assets/proyecto-01/12.jpg",
       "categories": [
         "jardines",
         "cesped",
         "riego",
         "plantaciones"
       ],
-      "tag": ""
+      "tag": "",
+      "photos": [
+        {
+          "image": "assets/proyecto-01/01.jpg",
+          "caption": "Riego en zanjas",
+          "description": ""
+        },
+        {
+          "image": "assets/proyecto-01/02.jpg",
+          "caption": "Zona junto a la tarima",
+          "description": ""
+        },
+        {
+          "image": "assets/proyecto-01/03.jpg",
+          "caption": "Preparación del parterre",
+          "description": ""
+        },
+        {
+          "image": "assets/proyecto-01/04.jpg",
+          "caption": "Nivelación junto a la piscina",
+          "description": ""
+        },
+        {
+          "image": "assets/proyecto-01/05.jpg",
+          "caption": "Terreno nivelado",
+          "description": ""
+        },
+        {
+          "image": "assets/proyecto-01/06.jpg",
+          "caption": "Inicio de la colocación",
+          "description": ""
+        },
+        {
+          "image": "assets/proyecto-01/07.jpg",
+          "caption": "Tepes junto a la tarima",
+          "description": ""
+        },
+        {
+          "image": "assets/proyecto-01/08.jpg",
+          "caption": "Césped recién colocado",
+          "description": ""
+        },
+        {
+          "image": "assets/proyecto-01/09.jpg",
+          "caption": "Distribución de las plantas",
+          "description": ""
+        },
+        {
+          "image": "assets/proyecto-01/10.jpg",
+          "caption": "Palmeras y trepadoras",
+          "description": ""
+        },
+        {
+          "image": "assets/proyecto-01/11.jpg",
+          "caption": "Parterre junto a la piscina",
+          "description": ""
+        },
+        {
+          "image": "assets/proyecto-01/12.jpg",
+          "caption": "Césped junto al muro",
+          "description": ""
+        },
+        {
+          "image": "assets/proyecto-01/13.jpg",
+          "caption": "Resultado junto a la tarima",
+          "description": ""
+        },
+        {
+          "image": "assets/proyecto-01/14.jpg",
+          "caption": "Riego final junto a la piscina",
+          "description": ""
+        }
+      ]
     },
     {
       "title": "Césped artificial junto a la piscina",
       "description": "Preparamos la base del terreno junto a la piscina, extendimos la malla y colocamos el césped artificial ajustado al pavimento. Las dos últimas fotos muestran cómo queda el acabado desde ángulos distintos.",
-      "image": "assets/proyecto-02.jpg",
+      "image": "assets/proyecto-02/04.jpg",
       "categories": [
         "cesped",
         "terrenos"
       ],
-      "tag": ""
+      "tag": "",
+      "photos": [
+        {
+          "image": "assets/proyecto-02/01.jpg",
+          "caption": "Preparación del terreno",
+          "description": ""
+        },
+        {
+          "image": "assets/proyecto-02/02.jpg",
+          "caption": "Montaje de malla",
+          "description": ""
+        },
+        {
+          "image": "assets/proyecto-02/03.jpg",
+          "caption": "Instalación de césped artificial",
+          "description": ""
+        },
+        {
+          "image": "assets/proyecto-02/04.jpg",
+          "caption": "Resultado final",
+          "description": ""
+        }
+      ]
     },
     {
       "title": "Diseño y plantación de jardinera interior",
       "description": "Preparamos la tierra y aportamos sustrato a la jardinera interior. Distribuimos plantas de distintas alturas alrededor del ejemplar central, con follaje verde y flores rojas. La vista superior muestra cómo se organiza el conjunto.",
-      "image": "assets/proyecto-03.jpg",
+      "image": "assets/proyecto-03/04.jpg",
       "categories": [
         "jardines",
         "plantaciones"
       ],
-      "tag": ""
+      "tag": "",
+      "photos": [
+        {
+          "image": "assets/proyecto-03/01.jpg",
+          "caption": "Preparación del terreno",
+          "description": ""
+        },
+        {
+          "image": "assets/proyecto-03/02.jpg",
+          "caption": "Aporte de sustrato",
+          "description": ""
+        },
+        {
+          "image": "assets/proyecto-03/03.jpg",
+          "caption": "Plantación y diseño",
+          "description": ""
+        },
+        {
+          "image": "assets/proyecto-03/04.jpg",
+          "caption": "Resultado final desde arriba",
+          "description": ""
+        }
+      ]
     },
     {
       "title": "Jardín con piedra volcánica y flores",
       "description": "Acondicionamos el terreno alrededor del arbolado existente, dispusimos las líneas de riego y adaptamos la malla antihierba a los troncos. Un aro metálico delimita el alcorque y separa las flores blancas, rosas y rojas de la piedra volcánica rojiza.",
-      "image": "assets/proyecto-23.jpg",
+      "image": "assets/proyecto-23/04.jpg",
       "categories": [
         "jardines",
         "riego",
         "plantaciones"
       ],
-      "tag": ""
+      "tag": "",
+      "photos": [
+        {
+          "image": "assets/proyecto-23/01.jpg",
+          "caption": "Preparación del terreno",
+          "description": "Se acondiciona el suelo alrededor del arbolado existente."
+        },
+        {
+          "image": "assets/proyecto-23/02.jpg",
+          "caption": "Riego y colocación de la malla",
+          "description": "Se disponen las líneas de riego y se empieza a extender la malla antihierba."
+        },
+        {
+          "image": "assets/proyecto-23/03.jpg",
+          "caption": "Malla y aro del alcorque",
+          "description": "La malla se adapta a los troncos y el aro metálico delimita el alcorque."
+        },
+        {
+          "image": "assets/proyecto-23/04.jpg",
+          "caption": "Piedra volcánica y flores",
+          "description": "La piedra volcánica cubre el terreno y las flores enmarcan el árbol."
+        }
+      ]
     },
     {
       "title": "Poda y puesta a punto de zonas comunes",
       "description": "Recortamos los setos a ambos lados del paseo de una comunidad de vecinos y retiramos los restos de poda. Las dos vistas muestran el cambio desde el trabajo en curso hasta el paseo despejado, con los setos perfilados y el césped visible.",
-      "image": "assets/proyecto-24.jpg",
+      "image": "assets/proyecto-24/02.jpg",
       "categories": [
         "poda",
         "limpieza"
       ],
-      "tag": ""
+      "tag": "",
+      "photos": [
+        {
+          "image": "assets/proyecto-24/01.jpg",
+          "caption": "Durante la poda",
+          "description": "Se recortan los setos a ambos lados del paseo comunitario."
+        },
+        {
+          "image": "assets/proyecto-24/02.jpg",
+          "caption": "Paseo tras la puesta a punto",
+          "description": "Los setos quedan perfilados y el recorrido pavimentado, despejado."
+        }
+      ]
     },
     {
       "title": "Riego y siembra de césped en jardín",
       "description": "Trabajamos la tierra alrededor de los árboles, los caminos y la fuente ornamental. Tendimos las conducciones de riego y sembramos césped natural sobre el suelo preparado. Las últimas fotos muestran el césped crecido entre los elementos existentes.",
-      "image": "assets/proyecto-17.jpg",
+      "image": "assets/proyecto-17/05.jpg",
       "categories": [
         "cesped",
         "terrenos",
         "riego"
       ],
-      "tag": ""
+      "tag": "",
+      "photos": [
+        {
+          "image": "assets/proyecto-17/01.jpg",
+          "caption": "Preparación del suelo",
+          "description": "Se trabaja el suelo alrededor de los árboles existentes."
+        },
+        {
+          "image": "assets/proyecto-17/02.jpg",
+          "caption": "Terreno junto a la fuente",
+          "description": "Se prepara la tierra junto a los caminos y la fuente."
+        },
+        {
+          "image": "assets/proyecto-17/03.jpg",
+          "caption": "Tendido de conducciones",
+          "description": "Las conducciones recorren las distintas zonas del jardín."
+        },
+        {
+          "image": "assets/proyecto-17/04.jpg",
+          "caption": "Instalación del riego",
+          "description": "Con el riego instalado y el suelo preparado, se siembra el césped."
+        },
+        {
+          "image": "assets/proyecto-17/05.jpg",
+          "caption": "Césped junto a los caminos",
+          "description": "El césped crecido bordea los caminos y rodea la fuente."
+        },
+        {
+          "image": "assets/proyecto-17/06.jpg",
+          "caption": "Vista desde la terraza",
+          "description": "La cubierta verde llega hasta el muro de piedra."
+        },
+        {
+          "image": "assets/proyecto-17/07.jpg",
+          "caption": "Césped bajo el arbolado",
+          "description": "El césped se integra con los árboles y las plantas existentes."
+        },
+        {
+          "image": "assets/proyecto-17/08.jpg",
+          "caption": "Jardín con césped crecido",
+          "description": "Vista general del jardín tras el crecimiento del césped."
+        }
+      ]
     },
     {
       "title": "Riego por goteo y acabado con chinos",
       "description": "Acondicionamos la franja junto a la fachada e instalamos el riego por goteo. Colocamos aros de chapa alrededor de las palmeras Trachycarpus y extendimos los chinos grises por fuera de los aros para separar la cobertura de piedra de la tierra al pie de cada palmera.",
-      "image": "assets/proyecto-09.jpg",
+      "image": "assets/proyecto-09/03.jpg",
       "categories": [
         "riego",
         "jardines",
         "terrenos"
       ],
-      "tag": ""
+      "tag": "",
+      "photos": [
+        {
+          "image": "assets/proyecto-09/01.jpg",
+          "caption": "Preparación y riego por goteo",
+          "description": "Se acondiciona la franja de terreno y se instalan las líneas de goteo."
+        },
+        {
+          "image": "assets/proyecto-09/02.jpg",
+          "caption": "Preparación del terreno y montaje de aros en palmera Trachycarpus",
+          "description": "Los aros de chapa delimitan la base de cada palmera."
+        },
+        {
+          "image": "assets/proyecto-09/03.jpg",
+          "caption": "Acabado con chinos",
+          "description": "Los chinos cubren la superficie exterior a los aros."
+        }
+      ]
     },
     {
       "title": "Poda de arbolado en la zona de piscina del club",
       "description": "Podamos la alineación de árboles situada entre el seto perimetral y el césped de la piscina. Las fotos desde un ángulo similar muestran la reducción del volumen de las copas y las ramas principales visibles tras el recorte.",
-      "image": "assets/proyecto-13.jpg",
+      "image": "assets/proyecto-13/02.jpg",
       "categories": [
         "poda"
       ],
-      "tag": ""
+      "tag": "",
+      "photos": [
+        {
+          "image": "assets/proyecto-13/01.jpg",
+          "caption": "Antes de la poda",
+          "description": "Vista de las copas junto a la piscina antes de la intervención."
+        },
+        {
+          "image": "assets/proyecto-13/02.jpg",
+          "caption": "Después de la poda",
+          "description": "Tras la poda se aprecia la estructura de las ramas principales."
+        }
+      ]
     },
     {
       "title": "Poda de cítricos junto al paso peatonal",
       "description": "Perfilamos las copas de una alineación de cítricos y recortamos las ramas que sobresalían hacia el paso. El montaje muestra el follaje inicial, la plataforma elevadora utilizada en la intervención y la vista general de las copas perfiladas.",
-      "image": "assets/proyecto-08.jpg",
+      "image": "assets/proyecto-08/03.jpg",
       "categories": [
         "poda"
       ],
-      "tag": ""
+      "tag": "",
+      "photos": [
+        {
+          "image": "assets/proyecto-08/01.jpg",
+          "caption": "Copas antes de la poda",
+          "description": "Las ramas sobresalen hacia el paso peatonal."
+        },
+        {
+          "image": "assets/proyecto-08/02.jpg",
+          "caption": "Perfilado de las copas",
+          "description": "La poda define el contorno de las copas junto al paso."
+        },
+        {
+          "image": "assets/proyecto-08/03.jpg",
+          "caption": "Vista general de la intervención",
+          "description": "La vista general muestra las copas perfiladas y los restos del corte."
+        }
+      ]
     },
     {
       "title": "Poda de palmeras y árboles",
       "description": "Las fotos muestran la poda en curso y el estado tras el recorte de dos palmeras y del árbol central. En la segunda vista se aprecian los troncos de las palmeras más despejados y la estructura de las ramas principales del árbol.",
-      "image": "assets/proyecto-20.jpg",
+      "image": "assets/proyecto-20/02.jpg",
       "categories": [
         "poda"
       ],
-      "tag": ""
+      "tag": "",
+      "photos": [
+        {
+          "image": "assets/proyecto-20/01.jpg",
+          "caption": "Durante la poda",
+          "description": "Se aprecian ramas y restos de hojas cortadas al pie de las palmeras."
+        },
+        {
+          "image": "assets/proyecto-20/02.jpg",
+          "caption": "Tras el recorte",
+          "description": "Quedan visibles los troncos de las palmeras y las ramas principales del árbol."
+        }
+      ]
     }
   ]
 }
