@@ -21,6 +21,6 @@ export async function loadContent(locale: Locale, stega = true): Promise<Diction
   const settingsMedia = (data.settings || {}) as any;
   return {...fallback, ...data, settings: {...defaultSettings, ...data.settings, phone: stegaClean(data.settings?.phone || defaultSettings.phone), logoUrl: settingsMedia.logo?.asset ? createImageUrlBuilder(client).image(settingsMedia.logo).width(600).url() : settingsMedia.logoUrl || defaultSettings.logoUrl, heroImageUrl: settingsMedia.heroImage?.asset ? createImageUrlBuilder(client).image(settingsMedia.heroImage).width(1800).auto("format").url() : settingsMedia.heroImageUrl || defaultSettings.heroImageUrl},
     serviceItems: fallback.serviceItems.map((item, i) => ({...item, ...data.serviceItems?.[i], imageUrl: imageUrl(data.serviceItems?.[i])})),
-    projectItems: fallback.projectItems.map((item, i) => ({...item, ...data.projectItems?.[i], imageUrl: imageUrl(data.projectItems?.[i]), categories: data.projectItems?.[i]?.categories ? stegaClean(data.projectItems[i].categories) : undefined})),
+    projectItems: fallback.projectItems,
   } as Dictionary;
 }

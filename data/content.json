@@ -69,85 +69,106 @@
   ],
   "projects": [
     {
-      "title": "Renovación de jardín con fuente y olivos",
-      "description": "Preparación del terreno y renovación de las zonas de césped. Un montaje que reúne distintas fases del mismo trabajo.",
-      "image": "assets/jardin-montaje.png",
+      "title": "De terreno a jardín con césped en tepe",
+      "description": "Tendimos las conducciones de riego en zanjas y nivelamos la tierra junto a la vivienda y la piscina. Colocamos el césped natural en tepes ajustados a la tarima y plantamos palmeras y trepadoras en el parterre. El montaje termina con el riego final de la plantación.",
+      "image": "assets/proyecto-01.jpg",
       "categories": [
         "jardines",
         "cesped",
-        "terrenos"
+        "riego",
+        "plantaciones"
       ],
-      "tag": "Jardines · Césped natural"
+      "tag": ""
     },
     {
-      "title": "Césped artificial junto a una piscina",
-      "description": "Preparación de la superficie e instalación de césped artificial alrededor de la piscina, con imágenes del proceso y del resultado.",
-      "image": "assets/cesped-artificial-montaje.png",
+      "title": "Césped artificial junto a la piscina",
+      "description": "Preparamos la base del terreno junto a la piscina, extendimos la malla y colocamos el césped artificial ajustado al pavimento. Las dos últimas fotos muestran cómo queda el acabado desde ángulos distintos.",
+      "image": "assets/proyecto-02.jpg",
       "categories": [
         "cesped",
         "terrenos"
       ],
-      "tag": "Césped artificial · Preparación del terreno"
+      "tag": ""
     },
     {
-      "title": "Ajardinamiento de un espacio interior",
-      "description": "De la preparación del parterre a la plantación de palmeras y plantas ornamentales: distintas fases de una intervención completa.",
-      "image": "assets/interior-montaje.png",
+      "title": "Diseño y plantación de jardinera interior",
+      "description": "Preparamos la tierra y aportamos sustrato a la jardinera interior. Distribuimos plantas de distintas alturas alrededor del ejemplar central, con follaje verde y flores rojas. La vista superior muestra cómo se organiza el conjunto.",
+      "image": "assets/proyecto-03.jpg",
       "categories": [
         "jardines",
         "plantaciones"
       ],
-      "tag": "Plantaciones · Jardín interior"
+      "tag": ""
     },
     {
-      "title": "Renovación de setos en una comunidad",
-      "description": "Imágenes del proceso de retirada y renovación de un cerramiento vegetal en una zona comunitaria.",
-      "image": "assets/setos-comunidad-montaje.png",
+      "title": "Jardín con piedra volcánica y flores",
+      "description": "Acondicionamos el terreno alrededor del arbolado existente, dispusimos las líneas de riego y adaptamos la malla antihierba a los troncos. Un aro metálico delimita el alcorque y separa las flores blancas, rosas y rojas de la piedra volcánica rojiza.",
+      "image": "assets/proyecto-23.jpg",
       "categories": [
         "jardines",
+        "riego",
         "plantaciones"
       ],
-      "tag": "Comunidades · Renovación de setos"
+      "tag": ""
     },
     {
-      "title": "Renovación de jardín con grava blanca y cactus",
-      "description": "Preparación de un jardín junto a una pared y acabado con grava blanca, cactus y una cica. El montaje muestra el estado inicial y el resultado.",
-      "image": "assets/diseno-servicio.png",
-      "categories": [
-        "jardines",
-        "plantaciones"
-      ],
-      "tag": "Jardines · Plantaciones",
-      "alt": "Montaje del antes y después de un jardín con grava blanca, cactus y una cica"
-    },
-    {
-      "title": "Desbroce, limpieza y poda de vegetación",
-      "description": "Un montaje del antes y el después de la intervención sobre un cerramiento vegetal junto a una vivienda.",
-      "image": "assets/desbroce-montaje.png",
+      "title": "Poda y puesta a punto de zonas comunes",
+      "description": "Recortamos los setos a ambos lados del paseo de una comunidad de vecinos y retiramos los restos de poda. Las dos vistas muestran el cambio desde el trabajo en curso hasta el paseo despejado, con los setos perfilados y el césped visible.",
+      "image": "assets/proyecto-24.jpg",
       "categories": [
         "poda",
         "limpieza"
       ],
-      "tag": "Desbroces · Poda · Limpieza"
+      "tag": ""
     },
     {
-      "title": "Montaje de un sistema de riego",
-      "description": "Conexiones, preparación e instalación: una vista conjunta de los trabajos que hacen posible el riego de una zona verde.",
-      "image": "assets/riego-montaje.png",
+      "title": "Riego y siembra de césped en jardín",
+      "description": "Trabajamos la tierra alrededor de los árboles, los caminos y la fuente ornamental. Tendimos las conducciones de riego y sembramos césped natural sobre el suelo preparado. Las últimas fotos muestran el césped crecido entre los elementos existentes.",
+      "image": "assets/proyecto-17.jpg",
       "categories": [
+        "cesped",
+        "terrenos",
         "riego"
       ],
-      "tag": "Instalación · Sistemas de riego"
+      "tag": ""
     },
     {
-      "title": "Acondicionamiento de zonas verdes en una plaza",
-      "description": "Preparación del terreno e implantación de césped en un espacio exterior de uso común.",
-      "image": "assets/plaza-montaje.png",
+      "title": "Riego por goteo y acabado con chinos",
+      "description": "Acondicionamos la franja junto a la fachada e instalamos el riego por goteo. Colocamos aros de chapa alrededor de las palmeras Trachycarpus y extendimos los chinos grises por fuera de los aros para separar la cobertura de piedra de la tierra al pie de cada palmera.",
+      "image": "assets/proyecto-09.jpg",
       "categories": [
-        "terrenos",
-        "cesped"
+        "riego",
+        "jardines",
+        "terrenos"
       ],
-      "tag": "Acondicionamiento · Zonas verdes"
+      "tag": ""
+    },
+    {
+      "title": "Poda de arbolado en la zona de piscina del club",
+      "description": "Podamos la alineación de árboles situada entre el seto perimetral y el césped de la piscina. Las fotos desde un ángulo similar muestran la reducción del volumen de las copas y las ramas principales visibles tras el recorte.",
+      "image": "assets/proyecto-13.jpg",
+      "categories": [
+        "poda"
+      ],
+      "tag": ""
+    },
+    {
+      "title": "Poda de cítricos junto al paso peatonal",
+      "description": "Perfilamos las copas de una alineación de cítricos y recortamos las ramas que sobresalían hacia el paso. El montaje muestra el follaje inicial, la plataforma elevadora utilizada en la intervención y la vista general de las copas perfiladas.",
+      "image": "assets/proyecto-08.jpg",
+      "categories": [
+        "poda"
+      ],
+      "tag": ""
+    },
+    {
+      "title": "Poda de palmeras y árboles",
+      "description": "Las fotos muestran la poda en curso y el estado tras el recorte de dos palmeras y del árbol central. En la segunda vista se aprecian los troncos de las palmeras más despejados y la estructura de las ramas principales del árbol.",
+      "image": "assets/proyecto-20.jpg",
+      "categories": [
+        "poda"
+      ],
+      "tag": ""
     }
   ]
 }

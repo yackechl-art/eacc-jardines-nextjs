@@ -166,37 +166,54 @@
   ],
   "projectItems": [
     {
-      "title": "Renovação de jardim com fonte e oliveiras",
-      "description": "Preparação do terreno e renovação da relva. Uma montagem original reúne várias fases do mesmo trabalho."
+      "title": "De terreno a jardín con césped en tepe",
+      "description": "Tendimos las conducciones de riego en zanjas y nivelamos la tierra junto a la vivienda y la piscina. Colocamos el césped natural en tepes ajustados a la tarima y plantamos palmeras y trepadoras en el parterre. El montaje termina con el riego final de la plantación.",
+      "alt": "Montaje de EACC Jardines · De terreno a jardín con césped en tepe"
     },
     {
-      "title": "Relva artificial junto a uma piscina",
-      "description": "Preparação da superfície e instalação de relva artificial à volta da piscina, com o processo e o resultado."
+      "title": "Césped artificial junto a la piscina",
+      "description": "Preparamos la base del terreno junto a la piscina, extendimos la malla y colocamos el césped artificial ajustado al pavimento. Las dos últimas fotos muestran cómo queda el acabado desde ángulos distintos.",
+      "alt": "Montaje de EACC Jardines · Césped artificial junto a la piscina"
     },
     {
-      "title": "Ajardinamento de um espaço interior",
-      "description": "Da preparação do canteiro à plantação de palmeiras e plantas ornamentais: várias fases de uma intervenção completa."
+      "title": "Diseño y plantación de jardinera interior",
+      "description": "Preparamos la tierra y aportamos sustrato a la jardinera interior. Distribuimos plantas de distintas alturas alrededor del ejemplar central, con follaje verde y flores rojas. La vista superior muestra cómo se organiza el conjunto.",
+      "alt": "Montaje de EACC Jardines · Diseño y plantación de jardinera interior"
     },
     {
-      "title": "Renovação de sebes num condomínio",
-      "description": "Imagens da remoção e renovação de uma vedação vegetal numa zona comum."
+      "title": "Jardín con piedra volcánica y flores",
+      "description": "Acondicionamos el terreno alrededor del arbolado existente, dispusimos las líneas de riego y adaptamos la malla antihierba a los troncos. Un aro metálico delimita el alcorque y separa las flores blancas, rosas y rojas de la piedra volcánica rojiza.",
+      "alt": "Montaje de EACC Jardines · Jardín con piedra volcánica y flores"
     },
     {
-      "title": "Renovação de jardim com gravilha branca e cactos",
-      "description": "Preparação de um jardim junto a um muro e acabamento com gravilha branca, cactos e uma cica. A montagem mostra o estado inicial e o resultado.",
-      "alt": "Montagem do antes e depois de um jardim com gravilha branca, cactos e uma cica"
+      "title": "Poda y puesta a punto de zonas comunes",
+      "description": "Recortamos los setos a ambos lados del paseo de una comunidad de vecinos y retiramos los restos de poda. Las dos vistas muestran el cambio desde el trabajo en curso hasta el paseo despejado, con los setos perfilados y el césped visible.",
+      "alt": "Montaje de EACC Jardines · Poda y puesta a punto de zonas comunes"
     },
     {
-      "title": "Desmatação, limpeza e poda de vegetação",
-      "description": "Montagem antes e depois de uma intervenção numa vedação vegetal junto a uma habitação."
+      "title": "Riego y siembra de césped en jardín",
+      "description": "Trabajamos la tierra alrededor de los árboles, los caminos y la fuente ornamental. Tendimos las conducciones de riego y sembramos césped natural sobre el suelo preparado. Las últimas fotos muestran el césped crecido entre los elementos existentes.",
+      "alt": "Montaje de EACC Jardines · Riego y siembra de césped en jardín"
     },
     {
-      "title": "Instalação de um sistema de rega",
-      "description": "Ligações, preparação e instalação: uma vista conjunta dos trabalhos de rega de um espaço verde."
+      "title": "Riego por goteo y acabado con chinos",
+      "description": "Acondicionamos la franja junto a la fachada e instalamos el riego por goteo. Colocamos aros de chapa alrededor de las palmeras Trachycarpus y extendimos los chinos grises por fuera de los aros para separar la cobertura de piedra de la tierra al pie de cada palmera.",
+      "alt": "Montaje de EACC Jardines · Riego por goteo y acabado con chinos"
     },
     {
-      "title": "Acondicionamento de espaços verdes numa praça",
-      "description": "Preparação do terreno e implantação de relva num espaço exterior de utilização comum."
+      "title": "Poda de arbolado en la zona de piscina del club",
+      "description": "Podamos la alineación de árboles situada entre el seto perimetral y el césped de la piscina. Las fotos desde un ángulo similar muestran la reducción del volumen de las copas y las ramas principales visibles tras el recorte.",
+      "alt": "Montaje de EACC Jardines · Poda de arbolado en la zona de piscina del club"
+    },
+    {
+      "title": "Poda de cítricos junto al paso peatonal",
+      "description": "Perfilamos las copas de una alineación de cítricos y recortamos las ramas que sobresalían hacia el paso. El montaje muestra el follaje inicial, la plataforma elevadora utilizada en la intervención y la vista general de las copas perfiladas.",
+      "alt": "Montaje de EACC Jardines · Poda de cítricos junto al paso peatonal"
+    },
+    {
+      "title": "Poda de palmeras y árboles",
+      "description": "Las fotos muestran la poda en curso y el estado tras el recorte de dos palmeras y del árbol central. En la segunda vista se aprecian los troncos de las palmeras más despejados y la estructura de las ramas principales del árbol.",
+      "alt": "Montaje de EACC Jardines · Poda de palmeras y árboles"
     }
   ],
   "openMenu": "Abrir menu",
