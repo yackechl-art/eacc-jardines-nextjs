@@ -2013,3 +2013,9 @@ dialog p {
 .project-steps img {
   aspect-ratio: 4 / 3;
 }
+
+.detail-photo img[src="/assets/proyecto-03/04.jpg"],
+.project-steps img[src="/assets/proyecto-03/04.jpg"] {
+  object-fit: contain;
+  background: #e8eddf;
+}
