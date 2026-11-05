@@ -120,7 +120,7 @@ function Hero({ locale, copy }: { locale: Locale; copy?: Dictionary }) {
             className="hero-img"
             data-sanity={createDataAttribute({id:`siteContent-${locale}`,type:"siteContent",path:"settings.heroImage"}).toString()}
             src={(d.settings || defaultSettings).heroImageUrl}
-            alt={getContent(locale, d).projects[0].title}
+            alt={{ es: "Vistas frontal y superior de una jardinera tropical interior", en: "Front and overhead views of an indoor tropical planter", fr: "Vues de face et de dessus d’une jardinière tropicale d’intérieur", de: "Vorderansicht und Draufsicht eines tropischen Pflanzbeets im Innenbereich", pt: "Vistas frontal e superior de uma floreira tropical de interior" }[locale]}
             fetchPriority="high"
           />
           <div className="photo-label">
