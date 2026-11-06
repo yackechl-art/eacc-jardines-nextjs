@@ -4,6 +4,7 @@ import fr from "../data/locales/fr.json";
 import de from "../data/locales/de.json";
 import pt from "../data/locales/pt.json";
 import source from "../data/content.json";
+import projectTranslations from "../data/project-translations.json";
 export const locales = ["es", "en", "fr", "de", "pt"] as const;
 export type Locale = (typeof locales)[number];
 export type SiteSettings = { brandName: string; phone: string; displayPhone: string; logoUrl: string; photoLogoUrl?: string; heroImageUrl: string };
@@ -40,6 +41,8 @@ export function getContent(locale: Locale, d: Dictionary = getDictionary(locale)
       ),
     );
   labels.limpieza = d.filters[3];
+  const translatedProjects: Record<string, { title: string; description: string; photos: Record<string, { caption: string; description: string }> }> =
+    locale === "es" ? {} : projectTranslations[locale];
   return {
     services: source.services.map((s, i) => ({
       ...s,
@@ -49,15 +52,21 @@ export function getContent(locale: Locale, d: Dictionary = getDictionary(locale)
       alt: d.serviceItems[i].alt || d.serviceItems[i].title,
       image: d.serviceItems[i].imageUrl || `assets/service-original-${i + 1}.webp`,
     })),
-    projects: source.projects.map((p, i) => ({
-      ...p,
-      ...d.projectItems[i],
-      id: String(i),
-      slug: slugify(d.projectItems[i].title),
-      alt: d.projectItems[i].alt || d.projectItems[i].title,
-      image: d.projectItems[i].imageUrl || p.image,
-      categories: d.projectItems[i].categories || p.categories,
-      tag: [...new Set((d.projectItems[i].categories || p.categories).map((k) => labels[k]))].join(" · "),
-    })),
+    projects: source.projects.map((p, i) => {
+      const translation = translatedProjects[p.image];
+      return {
+        ...p,
+        ...d.projectItems[i],
+        id: String(i),
+        slug: slugify(d.projectItems[i].title),
+        title: translation?.title || d.projectItems[i].title,
+        description: translation?.description || d.projectItems[i].description,
+        alt: translation?.title || d.projectItems[i].alt || d.projectItems[i].title,
+        photos: p.photos.map((photo) => ({ ...photo, ...translation?.photos[photo.image] })),
+        image: d.projectItems[i].imageUrl || p.image,
+        categories: d.projectItems[i].categories || p.categories,
+        tag: [...new Set((d.projectItems[i].categories || p.categories).map((k) => labels[k]))].join(" · "),
+      };
+    }),
   };
 }
